@@ -1,6 +1,7 @@
 import argparse
 from contextlib import ExitStack
 import errant
+import stanza
 
 def main():
     # Parse command line args
@@ -88,3 +89,7 @@ def parse_args():
 # Output: A noop edit; i.e. text contains no edits
 def noop_edit(id=0):
     return "A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||"+str(id)
+
+# test use only
+if __name__=="__main__":
+    main()
