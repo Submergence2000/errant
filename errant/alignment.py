@@ -12,8 +12,8 @@ class Alignment:
     # Input 3: A flag for standard Levenshtein alignment
     def __init__(self, orig, cor, lev=False):
         # Set orig and cor
-        self.orig = orig
-        self.cor = cor
+        self.orig = [word for sentence in orig.sentences for word in sentence.words]
+        self.cor = [word for sentence in cor.sentences for word in sentence.words]
         # Align orig and cor and get the cost and op matrices
         self.cost_matrix, self.op_matrix = self.align(lev)
         # Get the cheapest align sequence from the op matrix
@@ -26,8 +26,8 @@ class Alignment:
         o_len = len(self.orig)
         c_len = len(self.cor)
         # Lower case token IDs (for transpositions)
-        o_low = [o.lower for o in self.orig]
-        c_low = [c.lower for c in self.cor]
+        o_low = [o.text.lower() for o in self.orig]
+        c_low = [c.text.lower() for c in self.cor]
         # Create the cost_matrix and the op_matrix
         cost_matrix = [[0.0 for j in range(c_len+1)] for i in range(o_len+1)]
         op_matrix = [["O" for j in range(c_len+1)] for i in range(o_len+1)]
@@ -43,7 +43,7 @@ class Alignment:
         for i in range(o_len):
             for j in range(c_len):
                 # Matches
-                if self.orig[i].orth == self.cor[j].orth:
+                if self.orig[i].text == self.cor[j].text:
                     cost_matrix[i+1][j+1] = cost_matrix[i][j]
                     op_matrix[i+1][j+1] = "M"
                 # Non-matches
@@ -85,7 +85,7 @@ class Alignment:
     # Output: A linguistic cost between 0 < x < 2
     def get_sub_cost(self, o, c):
         # Short circuit if the only difference is case
-        if o.lower == c.lower: return 0
+        if o.text.lower() == c.text.lower(): return 0
         # Lemma cost
         if o.lemma == c.lemma: lemma_cost = 0
         else: lemma_cost = 0.499

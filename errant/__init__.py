@@ -1,27 +1,41 @@
 from importlib import import_module
 import spacy
+import json
+import stanza
 from errant.annotator import Annotator
 
 # ERRANT version
 __version__ = '3.0.0'
 
 # Load an ERRANT Annotator object for a given language
-def load(lang, nlp=None):
+def load(lang, nlp=None, legacy=False):
     # Make sure the language is supported
-    supported = {"en"}
-    if lang not in supported:
-        raise Exception(f"{lang} is an unsupported or unknown language")
+    if legacy:
+        supported = {"en"}
+        if lang not in supported:
+            raise ValueError(f"{lang} is an unsupported or unknown language")
 
-    # Load spacy (small model if no model supplied)
-    nlp = nlp or spacy.load(f"{lang}_core_web_sm", disable=["ner"])
+        # Load spacy (small model if no model supplied)
+        nlp = nlp or spacy.load(f"{lang}_core_web_sm", disable=["ner"])
 
-    # Load language edit merger
-    merger = import_module(f"errant.{lang}.merger")
+        # Load language edit merger
+        merger = import_module(f"errant.{lang}.merger")
 
-    # Load language edit classifier
-    classifier = import_module(f"errant.{lang}.classifier")
-    # The English classifier needs spacy
-    if lang == "en": classifier.nlp = nlp
+        # Load language edit classifier
+        classifier = import_module(f"errant.{lang}.classifier")
+        # The English classifier needs spacy
+        if lang == "en": classifier.nlp = nlp
+    else:
+        with open("errant/stanza_resources_1.7.0.json", mode='r', encoding='utf-8') as f:
+            stanza_supported = json.load(f).keys()
+        
+        if lang not in stanza_supported:
+            raise ValueError(f"{lang} is an unsupported or unknown language")
+        
+        nlp = nlp or stanza.Pipeline(lang)
+        merger = import_module(f"errant.multi.merger")
+        classifier = import_module(f"errant.multi.classifier")
+        classifier.nlp = nlp
 
     # Return a configured ERRANT annotator
     return Annotator(lang, nlp, merger, classifier)

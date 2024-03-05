@@ -1,5 +1,7 @@
 import argparse
 from collections import Counter
+from errant.sent_alignment import sent_align
+from errant.reindex import get_m2_sents, revert_m2_sents
 
 def main():
     # Parse command line args
@@ -7,6 +9,11 @@ def main():
     # Open hypothesis and reference m2 files and split into chunks
     hyp_m2 = open(args.hyp).read().strip().split("\n\n")
     ref_m2 = open(args.ref).read().strip().split("\n\n")
+    hyp_m2 = get_m2_sents(hyp_m2)
+    ref_m2 = get_m2_sents(ref_m2)
+    hyp_align, ref_align = sent_align(hyp_m2, ref_m2, algorithm="JP")
+    hyp_m2 = revert_m2_sents(hyp_align)
+    ref_m2 = revert_m2_sents(ref_align)
     # Make sure they have the same number of sentences
     assert len(hyp_m2) == len(ref_m2)
 

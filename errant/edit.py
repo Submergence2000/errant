@@ -10,12 +10,12 @@ class Edit:
         self.o_start = edit[0]
         self.o_end = edit[1]
         self.o_toks = orig[self.o_start:self.o_end]
-        self.o_str = self.o_toks.text if self.o_toks else ""
+        self.o_str = " ".join([token.text for token in self.o_toks]) if self.o_toks else ""
         # Cor offsets, spacy tokens and string
         self.c_start = edit[2]
         self.c_end = edit[3]
         self.c_toks = cor[self.c_start:self.c_end]
-        self.c_str = self.c_toks.text if self.c_toks else ""
+        self.c_str = " ".join([token.text for token in self.c_toks]) if self.c_toks else ""
         # Error type
         self.type = type
 

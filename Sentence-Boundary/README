@@ -1,0 +1,3 @@
+`dev.bea19.origin.txt` is the file downloaded from https://www.cl.cam.ac.uk/research/nl/bea2019st/data/ABCN.dev.bea19.orig
+`dev.bea19.sb.txt` is the file which remove all end of sentence markers from `dev.bea19.origin.txt`
+`dev.bea19.stanza.txt` is the file with sentence boundaries detected by stanza for `dev.bea19.sb.txt`

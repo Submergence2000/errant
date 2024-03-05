@@ -15,22 +15,27 @@ def main():
     # See https://tinyurl.com/y4cj4gth . Also opens the output m2 file.
     with ExitStack() as stack, open(args.out, "w") as out_m2:
         in_files = [stack.enter_context(open(i)) for i in [args.orig]+args.cor]
-        # Process each line of all input files
+        # Process each line of all input files        
         for line in zip(*in_files):
             # Get the original and all the corrected texts
             orig = line[0].strip()
+            # fix a bug in Stanza
+            orig = orig.replace(" 'll", "'ll").replace(" 're", "'re").replace(" 've", "'ve").replace(" 'm", "'m")
             cors = line[1:]
             # Skip the line if orig is empty
             if not orig: continue
             # Parse orig with spacy
             orig = annotator.parse(orig, args.tok)
             # Write orig to the output m2 file
-            out_m2.write(" ".join(["S"]+[token.text for token in orig])+"\n")
+            orig_str = " ".join([token.text for sentence in orig.sentences for token in sentence.words])
+            out_m2.write("S " + orig_str +"\n")
             # Loop through the corrected texts
             for cor_id, cor in enumerate(cors):
+                # fix a bug in Stanza
+                cor = cor.replace(" 'll", "'ll").replace(" 're", "'re").replace(" 've", "'ve").replace(" 'm", "'m")
                 cor = cor.strip()
                 # If the texts are the same, write a noop edit
-                if orig.text.strip() == cor:
+                if orig.text.strip().replace(" ", "") == cor.replace(" ", ""):
                     out_m2.write(noop_edit(cor_id)+"\n")
                 # Otherwise, do extra processing
                 else:
@@ -68,10 +73,10 @@ def parse_args():
     parser.add_argument(
         "-tok", 
         help="Word tokenise the text using spacy (default: False).",
-        action="store_true")
+        action="store_false")
     parser.add_argument(
         "-lev",
-        help="Align using standard Levenshtein (default: False).",
+        help="Align using standard Levenshtein (default: True).",
         action="store_true")
     parser.add_argument(
         "-merge",
