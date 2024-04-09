@@ -16,15 +16,14 @@ def load(lang, nlp=None, legacy=False):
             raise ValueError(f"{lang} is an unsupported or unknown language")
 
         # Load spacy (small model if no model supplied)
-        nlp = nlp or spacy.load(f"{lang}_core_web_sm", disable=["ner"])
-
+        nlp = nlp or stanza.Pipeline(lang, tokenize_pretokenized=True)
+        
         # Load language edit merger
         merger = import_module(f"errant.{lang}.merger")
 
         # Load language edit classifier
         classifier = import_module(f"errant.{lang}.classifier")
-        # The English classifier needs spacy
-        if lang == "en": classifier.nlp = nlp
+        classifier.nlp = nlp
     else:
         with open("errant/stanza_resources_1.7.0.json", mode='r', encoding='utf-8') as f:
             stanza_supported = json.load(f).keys()
@@ -32,7 +31,7 @@ def load(lang, nlp=None, legacy=False):
         if lang not in stanza_supported:
             raise ValueError(f"{lang} is an unsupported or unknown language")
         
-        nlp = nlp or stanza.Pipeline(lang)
+        nlp = nlp or stanza.Pipeline(lang, tokenize_pretokenized=True)
         merger = import_module(f"errant.multi.merger")
         classifier = import_module(f"errant.multi.classifier")
         classifier.nlp = nlp

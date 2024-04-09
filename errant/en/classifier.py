@@ -75,12 +75,12 @@ def classify(edit):
     # Missing
     elif not edit.o_toks and edit.c_toks:
         op = "M:"
-        cat = " ".join([tok.upos for tok in edit.c_toks])
+        cat = get_one_sided_type(edit.c_toks)
         edit.type = op+cat
     # Unnecessary
     elif edit.o_toks and not edit.c_toks:
         op = "U:"
-        cat = " ".join([tok.upos for tok in edit.o_toks])
+        cat = get_one_sided_type(edit.o_toks)
         edit.type = op+cat
     # Replacement and special cases
     else:
@@ -106,41 +106,37 @@ def classify(edit):
         # Replacement
         else:
             op = "R:"
-            cat = " ".join([tok.upos for tok in edit.o_toks]) + " -> " + \
-                " ".join([tok.upos for tok in edit.c_toks])
+            cat = get_two_sided_type(edit.o_toks, edit.c_toks)
             edit.type = op+cat
     return edit
 
-# Input: Spacy tokens
+# Input: Stanza tokens
 # Output: A list of pos and dep tag strings
-def get_edit_info(toks):
-    pos = []
-    dep = []
-    for tok in toks:
-        pos.append(pos_map[tok.tag_])
-        dep.append(tok.dep_)
-    return pos, dep
+def get_edit_info_stanza(toks):
+    pos_list = [tok.upos for tok in toks]
+    dep_list = [tok.deprel for tok in toks]
+    return pos_list, dep_list
 
-# Input: Spacy tokens
+# Input: Stanza tokens
 # Output: An error type string based on input tokens from orig or cor
 # When one side of the edit is null, we can only use the other side
 def get_one_sided_type(toks):
     # Special cases
     if len(toks) == 1:
         # Possessive noun suffixes; e.g. ' -> 's
-        if toks[0].tag_ == "POS":
+        if toks[0].upos == "PART" and toks[0].deprel == "case:poss":
             return "NOUN:POSS"
         # Contractions. Rule must come after possessive
-        if toks[0].lower_ in conts:
+        if toks[0].text.lower() in conts:
             return "CONTR"
         # Infinitival "to" is treated as part of a verb form
-        if toks[0].lower_ == "to" and toks[0].pos == POS.PART and \
-                toks[0].dep_ != "prep":
+        if toks[0].text.lower() == "to" and toks[0].upos == "PART" and \
+                toks[0].deprel != "case":
             return "VERB:FORM"
     # Extract pos tags and parse info from the toks
-    pos_list, dep_list = get_edit_info(toks)
+    pos_list, dep_list = get_edit_info_stanza(toks)
     # Auxiliary verbs
-    if set(dep_list).issubset({"aux", "auxpass"}):
+    if set(dep_list).issubset({"aux", "aux:pass"}):
         return "VERB:TENSE"
     # POS-based tags. Ignores rare, uninformative categories
     if len(set(pos_list)) == 1 and pos_list[0] not in rare_pos:
@@ -160,8 +156,8 @@ def get_one_sided_type(toks):
 # Output: An error type string based on orig AND cor
 def get_two_sided_type(o_toks, c_toks):
     # Extract pos tags and parse info from the toks as lists
-    o_pos, o_dep = get_edit_info(o_toks)
-    c_pos, c_dep = get_edit_info(c_toks)
+    o_pos, o_dep = get_edit_info_stanza(o_toks)
+    c_pos, c_dep = get_edit_info_stanza(c_toks)
 
     # Orthography; i.e. whitespace and/or case errors.
     if only_orth_change(o_toks, c_toks):
@@ -174,26 +170,27 @@ def get_two_sided_type(o_toks, c_toks):
     if len(o_toks) == len(c_toks) == 1:
         # 1. SPECIAL CASES
         # Possessive noun suffixes; e.g. ' -> 's
-        if o_toks[0].tag_ == "POS" or c_toks[0].tag_ == "POS":
+        if o_toks[0].upos == "PART" and o_toks[0].deprel == "case:poss" \
+            or c_toks[0].upos == "PART" and c_toks[0].deprel == "case:poss":
             return "NOUN:POSS"
         # Contraction. Rule must come after possessive.
-        if (o_toks[0].lower_ in conts or \
-                c_toks[0].lower_ in conts) and \
+        if (o_toks[0].text.lower() in conts or \
+                c_toks[0].text.lower() in conts) and \
                 o_pos == c_pos:
             return "CONTR"
         # Special auxiliaries in contractions (1); e.g. ca -> can, wo -> will
         # Rule was broken in V1. Turned off this fix for compatibility.
-        if (o_toks[0].lower_ in aux_conts and \
-                c_toks[0].lower_ == aux_conts[o_toks[0].lower_]) or \
-                (c_toks[0].lower_ in aux_conts and \
-                o_toks[0].lower_ == aux_conts[c_toks[0].lower_]):
+        if (o_toks[0].text.lower() in aux_conts and \
+                c_toks[0].text.lower() == aux_conts[o_toks[0].text.lower()]) or \
+                (c_toks[0].text.lower() in aux_conts and \
+                o_toks[0].text.lower() == aux_conts[c_toks[0].text.lower()]):
             return "CONTR"
         # Special auxiliaries in contractions (2); e.g. ca -> could, wo -> should
-        if o_toks[0].lower_ in aux_conts or \
-                c_toks[0].lower_ in aux_conts:
+        if o_toks[0].text.lower() in aux_conts or \
+                c_toks[0].text.lower() in aux_conts:
             return "VERB:TENSE"
         # Special: "was" and "were" are the only past tense SVA
-        if {o_toks[0].lower_, c_toks[0].lower_} == {"was", "were"}:
+        if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"was", "were"}:
             return "VERB:SVA"
 
         # 2. SPELLING AND INFLECTION
@@ -203,7 +200,7 @@ def get_two_sided_type(o_toks, c_toks):
             # Check a GB English dict for both orig and lower case.
             # E.g. "cat" is in the dict, but "Cat" is not.
             if o_toks[0].text not in spell and \
-                    o_toks[0].lower_ not in spell:
+                    o_toks[0].text.lower() not in spell:
                 # Check if both sides have a common lemma
                 if o_toks[0].lemma == c_toks[0].lemma:
                     # Inflection; often count vs mass nouns or e.g. got vs getted
@@ -215,7 +212,7 @@ def get_two_sided_type(o_toks, c_toks):
                 # Use string similarity to detect true spelling errors.
                 else:
                     # Normalised Lev distance works better than Lev ratio
-                    str_sim = Levenshtein.normalized_similarity(o_toks[0].lower_, c_toks[0].lower_)
+                    str_sim = Levenshtein.normalized_similarity(o_toks[0].text.lower(), c_toks[0].text.lower())
                     # WARNING: THIS IS AN APPROXIMATION.
                     # Thresholds tuned manually on FCE_train + W&I_train
                     # str_sim > 0.55 is almost always a true spelling error
@@ -256,14 +253,14 @@ def get_two_sided_type(o_toks, c_toks):
                         return "VERB:FORM"
                     # Use fine PTB tags to find various errors.
                     # FORM errors normally involve VBG or VBN.
-                    if o_toks[0].tag_ in {"VBG", "VBN"} or \
-                            c_toks[0].tag_ in {"VBG", "VBN"}:
+                    if o_toks[0].upos in {"VBG", "VBN"} or \
+                            c_toks[0].upos in {"VBG", "VBN"}:
                         return "VERB:FORM"
                     # Of what's left, TENSE errors normally involved VBD.
-                    if o_toks[0].tag_ == "VBD" or c_toks[0].tag_ == "VBD":
+                    if o_toks[0].upos == "VBD" or c_toks[0].upos == "VBD":
                         return "VERB:TENSE"
                     # Of what's left, SVA errors normally involve VBZ.
-                    if o_toks[0].tag_ == "VBZ" or c_toks[0].tag_ == "VBZ":
+                    if o_toks[0].upos == "VBZ" or c_toks[0].upos == "VBZ":
                         return "VERB:SVA"
                     # Any remaining aux verbs are called TENSE.
                     if o_dep[0].startswith("aux") and \
@@ -273,14 +270,14 @@ def get_two_sided_type(o_toks, c_toks):
             if set(o_dep+c_dep).issubset({"acomp", "amod"}):
                 return "ADJ:FORM"
             # Adj to plural noun is usually noun number; e.g. musical -> musicals.
-            if o_pos[0] == "ADJ" and c_toks[0].tag_ == "NNS":
+            if o_pos[0] == "ADJ" and c_toks[0].upos == "NNS":
                 return "NOUN:NUM"
             # For remaining verb errors (rare), rely on c_pos
-            if c_toks[0].tag_ in {"VBG", "VBN"}:
+            if c_toks[0].upos in {"VBG", "VBN"}:
                 return "VERB:FORM"
-            if c_toks[0].tag_ == "VBD":
+            if c_toks[0].upos == "VBD":
                 return "VERB:TENSE"
-            if c_toks[0].tag_ == "VBZ":
+            if c_toks[0].upos == "VBZ":
                 return "VERB:SVA"
             # Tricky cases that all have the same lemma.
             else:
@@ -316,20 +313,20 @@ def get_two_sided_type(o_toks, c_toks):
         if set(o_pos+c_pos) == {"NUM", "DET"}:
             return "DET"
         # Special: other <-> another
-        if {o_toks[0].lower_, c_toks[0].lower_} == {"other", "another"}:
+        if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"other", "another"}:
             return "DET"
         # Special: your (sincerely) -> yours (sincerely)
-        if o_toks[0].lower_ == "your" and c_toks[0].lower_ == "yours":
+        if o_toks[0].text.lower() == "your" and c_toks[0].text.lower() == "yours":
             return "PRON"
         # Special: no <-> not; this is very context sensitive
-        if {o_toks[0].lower_, c_toks[0].lower_} == {"no", "not"}:
+        if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"no", "not"}:
             return "OTHER"
             
         # 5. STRING SIMILARITY
         # These rules are quite language specific.
         if o_toks[0].text.isalpha() and c_toks[0].text.isalpha():
             # Normalised Lev distance works better than Lev ratio
-            str_sim = Levenshtein.normalized_similarity(o_toks[0].lower_, c_toks[0].lower_)
+            str_sim = Levenshtein.normalized_similarity(o_toks[0].text.lower(), c_toks[0].text.lower())
             # WARNING: THIS IS AN APPROXIMATION.
             # Thresholds tuned manually on FCE_train + W&I_train
             # A. Short sequences are likely to be SPELL or function word errors
@@ -343,10 +340,10 @@ def get_two_sided_type(o_toks, c_toks):
                     return "SPELL"
             if len(o_toks[0].text) == 3:
                 # Special: the -> that (relative pronoun)
-                if o_toks[0].lower_ == "the" and c_toks[0].lower_ == "that":
+                if o_toks[0].text.lower() == "the" and c_toks[0].text.lower() == "that":
                     return "PRON"
                 # Special: all -> everything
-                if o_toks[0].lower_ == "all" and c_toks[0].lower_ == "everything":
+                if o_toks[0].text.lower() == "all" and c_toks[0].text.lower() == "everything":
                     return "PRON"
                 # off -> of, too -> to, out -> our, now -> know
                 if 2 <= len(c_toks[0].text) <= 4 and str_sim >= 0.5:
@@ -354,10 +351,10 @@ def get_two_sided_type(o_toks, c_toks):
             # B. Longer sequences are also likely to include content word errors
             if len(o_toks[0].text) == 4:
                 # Special: that <-> what
-                if {o_toks[0].lower_, c_toks[0].lower_} == {"that", "what"}:
+                if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"that", "what"}:
                     return "PRON"
                 # Special: well <-> good
-                if {o_toks[0].lower_, c_toks[0].lower_} == {"good", "well"} and \
+                if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"good", "well"} and \
                         c_pos[0] not in rare_pos:
                     return c_pos[0]
                 # knew -> new, 
@@ -375,7 +372,7 @@ def get_two_sided_type(o_toks, c_toks):
                     return c_pos[0]
             if len(o_toks[0].text) == 5:
                 # Special: after -> later
-                if {o_toks[0].lower_, c_toks[0].lower_} == {"after", "later"} and \
+                if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"after", "later"} and \
                         c_pos[0] not in rare_pos:
                     return c_pos[0]
                 # where -> were, found -> fund
@@ -390,10 +387,10 @@ def get_two_sided_type(o_toks, c_toks):
             # C. Longest sequences include MORPH errors
             if len(o_toks[0].text) > 5 and len(c_toks[0].text) > 5:
                 # Special: therefor -> therefore
-                if o_toks[0].lower_ == "therefor" and c_toks[0].lower_ == "therefore":
+                if o_toks[0].text.lower() == "therefor" and c_toks[0].text.lower() == "therefore":
                     return "SPELL"
                 # Special: though <-> thought
-                if {o_toks[0].lower_, c_toks[0].lower_} == {"though", "thought"}:
+                if {o_toks[0].text.lower(), c_toks[0].text.lower()} == {"though", "thought"}:
                     return "SPELL"
                 # Morphology errors: stress -> stressed, health -> healthy
                 if (o_toks[0].text.startswith(c_toks[0].text) or \
@@ -441,8 +438,8 @@ def get_two_sided_type(o_toks, c_toks):
             o_toks[0].lemma == c_toks[0].lemma:
         return "NOUN:POSS"
     # Adjective forms with "most" and "more"; e.g. more free -> freer
-    if (o_toks[0].lower_ in {"most", "more"} or \
-            c_toks[0].lower_ in {"most", "more"}) and \
+    if (o_toks[0].text.lower() in {"most", "more"} or \
+            c_toks[0].text.lower() in {"most", "more"}) and \
             o_toks[-1].lemma == c_toks[-1].lemma and \
             len(o_toks) <= 2 and len(c_toks) <= 2:
         return "ADJ:FORM"
@@ -455,8 +452,8 @@ def get_two_sided_type(o_toks, c_toks):
 # Input 2: Spacy cor tokens
 # Output: Boolean; the difference between orig and cor is only whitespace or case
 def only_orth_change(o_toks, c_toks):
-    o_join = "".join([o.lower_ for o in o_toks])
-    c_join = "".join([c.lower_ for c in c_toks])
+    o_join = "".join([o.text.lower() for o in o_toks])
+    c_join = "".join([c.text.lower() for c in c_toks])
     if o_join == c_join:
         return True
     return False
@@ -466,8 +463,8 @@ def only_orth_change(o_toks, c_toks):
 # Output: Boolean; the tokens are exactly the same but in a different order
 def exact_reordering(o_toks, c_toks):
     # Sorting lets us keep duplicates.
-    o_set = sorted([o.lower_ for o in o_toks])
-    c_set = sorted([c.lower_ for c in c_toks])
+    o_set = sorted([o.text.lower() for o in o_toks])
+    c_set = sorted([c.text.lower() for c in c_toks])
     if o_set == c_set:
         return True
     return False
@@ -475,37 +472,42 @@ def exact_reordering(o_toks, c_toks):
 # Input 1: An original text spacy token. 
 # Input 2: A corrected text spacy token.
 # Output: Boolean; both tokens have a dependant auxiliary verb.
-def preceded_by_aux(o_tok, c_tok):
-    # If the toks are aux, we need to check if they are the first aux.
-    if o_tok[0].dep_.startswith("aux") and c_tok[0].dep_.startswith("aux"):
-        # Find the parent verb
-        o_head = o_tok[0].head
-        c_head = c_tok[0].head
-        # Find the children of the parent
-        o_children = o_head.children
-        c_children = c_head.children
-        # Check the orig children.
+def preceded_by_aux(o_toks, c_toks):
+    # Assuming o_toks and c_toks are lists of stanza tokens for the original and corrected tokens respectively
+    # If the tokens are auxiliaries, we need to check if they are the first auxiliaries.
+    if o_toks[0].deprel.startswith("aux") and c_toks[0].deprel.startswith("aux"):
+        # Find the parent verb. In stanza, head refers to the parent token's index, not the token itself.
+        o_head = o_toks[0].head
+        c_head = c_toks[0].head
+
+        # Find the children of the parent by checking each token's head in the sentence.
+        o_children = [tok for tok in o_toks if tok.head == o_head]
+        c_children = [tok for tok in c_toks if tok.head == c_head]
+
+        # Check the original children.
         for o_child in o_children:
-            # Look at the first aux...
-            if o_child.dep_.startswith("aux"):
-                # Check if the string matches o_tok
-                if o_child.text != o_tok[0].text:
+            # Look at the first auxiliary...
+            if o_child.deprel.startswith("aux"):
+                # Check if the string matches o_toks[0]
+                if o_child.text != o_toks[0].text:
                     # If it doesn't, o_tok is not first so check cor
                     for c_child in c_children:
-                        # Find the first aux in cor...
-                        if c_child.dep_.startswith("aux"):
+                        # Find the first auxiliary in cor...
+                        if c_child.deprel.startswith("aux"):
                             # If that doesn't match either, neither are first aux
-                            if c_child.text != c_tok[0].text:
+                            if c_child.text != c_toks[0].text:
                                 return True
                             # Break after the first cor aux
                             break
-                # Break after the first orig aux.
-                break
-    # Otherwise, the toks are main verbs so we need to look for any aux.
+                    # Break after the first original aux.
+                    break
+    # Otherwise, the tokens are main verbs, so we need to look for any auxiliaries.
     else:
-        o_deps = [o_dep.dep_ for o_dep in o_tok[0].children]
-        c_deps = [c_dep.dep_ for c_dep in c_tok[0].children]
-        if "aux" in o_deps or "auxpass" in o_deps:
-            if "aux" in c_deps or "auxpass" in c_deps:
+        # Collect dependency relations of children tokens
+        o_deps = [child.deprel for child in o_toks if child.head == o_toks[0].id]
+        c_deps = [child.deprel for child in c_toks if child.head == c_toks[0].id]
+
+        if "aux" in o_deps or "aux:pass" in o_deps:
+            if "aux" in c_deps or "aux:pass" in c_deps:
                 return True
     return False

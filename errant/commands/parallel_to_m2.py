@@ -8,7 +8,7 @@ def main():
     args = parse_args()
     print("Loading resources...")
     # Load Errant
-    annotator = errant.load("en")
+    annotator = errant.load("en", legacy=True)
 
     print("Processing parallel files...")
     # Process an arbitrary number of files line by line simultaneously. Python 3.3+
@@ -18,29 +18,23 @@ def main():
         # Process each line of all input files        
         for line in zip(*in_files):
             # Get the original and all the corrected texts
-            orig = line[0].strip()
-            # fix a bug in Stanza
-            orig = orig.replace(" 'll", "'ll").replace(" 're", "'re").replace(" 've", "'ve").replace(" 'm", "'m")
+            orig = line[0]
             cors = line[1:]
             # Skip the line if orig is empty
             if not orig: continue
             # Parse orig with spacy
-            orig = annotator.parse(orig, args.tok)
+            orig = annotator.parse(orig.strip())
             # Write orig to the output m2 file
-            orig_str = " ".join([token.text for sentence in orig.sentences for token in sentence.words])
-            out_m2.write("S " + orig_str +"\n")
+            out_m2.write("S " + orig.text +"\n")
             # Loop through the corrected texts
             for cor_id, cor in enumerate(cors):
-                # fix a bug in Stanza
-                cor = cor.replace(" 'll", "'ll").replace(" 're", "'re").replace(" 've", "'ve").replace(" 'm", "'m")
-                cor = cor.strip()
                 # If the texts are the same, write a noop edit
-                if orig.text.strip().replace(" ", "") == cor.replace(" ", ""):
+                if orig.text.replace(" ", "").strip() == cor.replace(" ", "").strip():
                     out_m2.write(noop_edit(cor_id)+"\n")
                 # Otherwise, do extra processing
                 else:
                     # Parse cor with spacy
-                    cor = annotator.parse(cor, args.tok)
+                    cor = annotator.parse(cor.strip())
                     # Align the texts and extract and classify the edits
                     edits = annotator.annotate(orig, cor, args.lev, args.merge)
                     # Loop through the edits
@@ -70,10 +64,6 @@ def parse_args():
         "-out", 
         help="The output filepath.",
         required=True)
-    parser.add_argument(
-        "-tok", 
-        help="Word tokenise the text using spacy (default: False).",
-        action="store_false")
     parser.add_argument(
         "-lev",
         help="Align using standard Levenshtein (default: True).",
