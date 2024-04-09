@@ -2,11 +2,10 @@ from itertools import combinations, groupby
 from re import sub
 from string import punctuation
 from rapidfuzz.distance import Indel
-import spacy.symbols as POS
 from errant.edit import Edit
 
 # Merger resources
-open_pos = {POS.ADJ, POS.AUX, POS.ADV, POS.NOUN, POS.VERB}
+open_pos = {"ADJ", "AUX", "ADV", "NOUN", "VERB"}
 
 # Input: An Alignment object
 # Output: A list of Edit objects
@@ -85,7 +84,7 @@ def process_seq(seq, alignment):
         # [to eat -> eating], [watch -> look at]
         pos_set = set([tok.upos for tok in o]+[tok.upos for tok in c])
         if len(o) != len(c) and (len(pos_set) == 1 or \
-                pos_set.issubset({POS.AUX, POS.PART, POS.VERB})):
+                pos_set.issubset({"AUX", "PART", "VERB"})):
             return process_seq(seq[:start], alignment) + \
                 merge_edits(seq[start:end+1]) + \
                 process_seq(seq[end+1:], alignment)
@@ -102,8 +101,8 @@ def process_seq(seq, alignment):
                     process_seq(seq[start+1:], alignment)
             # Split final determiners
             if end == len(seq)-1 and ((ops[-1] in {"D", "S"} and \
-                    o[-1].upos == POS.DET) or (ops[-1] in {"I", "S"} and \
-                    c[-1].upos == POS.DET)):
+                    o[-1].upos == "DET") or (ops[-1] in {"I", "S"} and \
+                    c[-1].upos == "DET")):
                 return process_seq(seq[:-1], alignment) + [seq[-1]]
         # Set content word flag
         if not pos_set.isdisjoint(open_pos): content = True
@@ -113,7 +112,7 @@ def process_seq(seq, alignment):
 
 # Check whether token is punctuation
 def is_punct(token):
-    return token.upos == POS.PUNCT or token.text in punctuation
+    return token.upos == "PUNCT" or token.text in punctuation
 
 # Calculate the cost of character alignment; i.e. char similarity
 def char_cost(a, b):

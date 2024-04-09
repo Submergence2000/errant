@@ -1,6 +1,5 @@
 from errant.alignment import Alignment
 from errant.edit import Edit
-from spacy.tokens import Doc
 
 # Main ERRANT Annotator class
 class Annotator:

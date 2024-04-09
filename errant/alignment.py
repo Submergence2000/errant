@@ -1,11 +1,10 @@
 from itertools import groupby
 from rapidfuzz.distance import Indel
-import spacy.parts_of_speech as POS
 from errant.edit import Edit
 
 class Alignment:
     # Protected class resource
-    _open_pos = {POS.ADJ, POS.ADV, POS.NOUN, POS.VERB}
+    _open_pos = {"ADJ", "ADV", "NOUN", "VERB"}
 
     # Input 1: An original text string parsed by spacy
     # Input 2: A corrected text string parsed by spacy

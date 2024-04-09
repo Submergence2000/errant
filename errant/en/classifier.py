@@ -1,40 +1,11 @@
 from pathlib import Path
 from rapidfuzz.distance import Levenshtein
 from errant.en.lancaster import LancasterStemmer
-import spacy
-import spacy.symbols as POS
 
 # Load Hunspell word list
 def load_word_list(path):
     with open(path) as word_list:
         return set([word.strip() for word in word_list])
-
-# Load Universal Dependency POS Tags map file.
-# https://universaldependencies.org/tagset-conversion/en-penn-uposf.html
-def load_pos_map(path):
-    map_dict = {}
-    with open(path) as map_file:
-        for line in map_file:
-            line = line.strip().split("\t")
-            # Change ADP to PREP for readability
-            if line[1] == "ADP": map_dict[line[0]] = "PREP"
-            # Change PROPN to NOUN; we don't need a prop noun tag
-            elif line[1] == "PROPN": map_dict[line[0]] = "NOUN"
-            # Change CCONJ to CONJ
-            elif line[1] == "CCONJ": map_dict[line[0]] = "CONJ"
-            # Otherwise
-            else: map_dict[line[0]] = line[1].strip()
-        # Add some spacy PTB tags not in the original mapping.
-        map_dict['""'] = "PUNCT"
-        map_dict["SP"] = "SPACE"
-        map_dict["_SP"] = "SPACE"
-        map_dict["BES"] = "VERB"
-        map_dict["HVS"] = "VERB"
-        map_dict["ADD"] = "X"
-        map_dict["GW"] = "X"
-        map_dict["NFP"] = "X"
-        map_dict["XX"] = "X"
-    return map_dict
 
 # Classifier resources
 base_dir = Path(__file__).resolve().parent
@@ -44,10 +15,6 @@ nlp = None
 stemmer = LancasterStemmer()
 # GB English word list (inc -ise and -ize)
 spell = load_word_list(base_dir/"resources"/"en_GB-large.txt")
-# Part of speech map file
-pos_map = load_pos_map(base_dir/"resources"/"en-ptb_map")
-# Open class coarse Spacy POS tags 
-open_pos1 = {POS.ADJ, POS.ADV, POS.NOUN, POS.VERB}
 # Open class coarse Spacy POS tags (strings)
 open_pos2 = {"ADJ", "ADV", "NOUN", "VERB"}
 # Rare POS tags that make uninformative error categories
