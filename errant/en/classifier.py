@@ -9,13 +9,13 @@ def load_word_list(path):
 
 # Classifier resources
 base_dir = Path(__file__).resolve().parent
-# Spacy
+# Stanza
 nlp = None
 # Lancaster Stemmer
 stemmer = LancasterStemmer()
 # GB English word list (inc -ise and -ize)
 spell = load_word_list(base_dir/"resources"/"en_GB-large.txt")
-# Open class coarse Spacy POS tags (strings)
+# Open class coarse Stanza POS tags (strings)
 open_pos2 = {"ADJ", "ADV", "NOUN", "VERB"}
 # Rare POS tags that make uninformative error categories
 rare_pos = {"INTJ", "NUM", "SYM", "X"}
@@ -118,8 +118,8 @@ def get_one_sided_type(toks):
     else:
         return "OTHER"
 
-# Input 1: Spacy orig tokens
-# Input 2: Spacy cor tokens
+# Input 1: Stanza orig tokens
+# Input 2: Stanza cor tokens
 # Output: An error type string based on orig AND cor
 def get_two_sided_type(o_toks, c_toks):
     # Extract pos tags and parse info from the toks as lists
@@ -415,8 +415,8 @@ def get_two_sided_type(o_toks, c_toks):
     else:
         return "OTHER"
 
-# Input 1: Spacy orig tokens
-# Input 2: Spacy cor tokens
+# Input 1: Stanza orig tokens
+# Input 2: Stanza cor tokens
 # Output: Boolean; the difference between orig and cor is only whitespace or case
 def only_orth_change(o_toks, c_toks):
     o_join = "".join([o.text.lower() for o in o_toks])
@@ -425,8 +425,8 @@ def only_orth_change(o_toks, c_toks):
         return True
     return False
 
-# Input 1: Spacy orig tokens
-# Input 2: Spacy cor tokens
+# Input 1: Stanza orig tokens
+# Input 2: Stanza cor tokens
 # Output: Boolean; the tokens are exactly the same but in a different order
 def exact_reordering(o_toks, c_toks):
     # Sorting lets us keep duplicates.
@@ -436,8 +436,8 @@ def exact_reordering(o_toks, c_toks):
         return True
     return False
 
-# Input 1: An original text spacy token. 
-# Input 2: A corrected text spacy token.
+# Input 1: An original text Stanza token. 
+# Input 2: A corrected text Stanza token.
 # Output: Boolean; both tokens have a dependant auxiliary verb.
 def preceded_by_aux(o_toks, c_toks):
     # Assuming o_toks and c_toks are lists of stanza tokens for the original and corrected tokens respectively

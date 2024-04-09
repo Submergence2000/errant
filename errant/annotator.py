@@ -5,7 +5,7 @@ from errant.edit import Edit
 class Annotator:
 
     # Input 1: A string language id: e.g. "en"
-    # Input 2: A spacy processing object for the language
+    # Input 2: A Stanza processing object for the language
     # Input 3: A merging module for the language
     # Input 4: A classifier module for the language
     def __init__(self, lang, nlp=None, merger=None, classifier=None):
@@ -16,14 +16,14 @@ class Annotator:
 
     # Input 1: A text string
     # Input 2: A flag for word tokenisation
-    # Output: The input string parsed by spacy
+    # Output: The input string parsed by Stanza
     def parse(self, text):
         # POS tag and parse
         text = self.nlp(text)
         return text
 
-    # Input 1: An original text string parsed by spacy
-    # Input 2: A corrected text string parsed by spacy
+    # Input 1: An original text string parsed by Stanza
+    # Input 2: A corrected text string parsed by Stanza
     # Input 3: A flag for standard Levenshtein alignment
     # Output: An Alignment object
     def align(self, orig, cor, lev=False):
@@ -56,8 +56,8 @@ class Annotator:
     def classify(self, edit):
         return self.classifier.classify(edit)
 
-    # Input 1: An original text string parsed by spacy
-    # Input 2: A corrected text string parsed by spacy
+    # Input 1: An original text string parsed by Stanza
+    # Input 2: A corrected text string parsed by Stanza
     # Input 3: A flag for standard Levenshtein alignment
     # Input 4: A flag for merging strategy
     # Output: A list of automatically extracted, typed Edit objects
@@ -68,8 +68,8 @@ class Annotator:
             edit = self.classify(edit)
         return edits
 
-    # Input 1: An original text string parsed by spacy
-    # Input 2: A corrected text string parsed by spacy
+    # Input 1: An original text string parsed by Stanza
+    # Input 2: A corrected text string parsed by Stanza
     # Input 3: A token span edit list; [o_start, o_end, c_start, c_end, (cat)]
     # Input 4: A flag for gold edit minimisation; e.g. [a b -> a c] = [b -> c]
     # Input 5: A flag to preserve the old error category (i.e. turn off classifier)

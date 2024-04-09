@@ -6,8 +6,8 @@ class Alignment:
     # Protected class resource
     _open_pos = {"ADJ", "ADV", "NOUN", "VERB"}
 
-    # Input 1: An original text string parsed by spacy
-    # Input 2: A corrected text string parsed by spacy
+    # Input 1: An original text string parsed by Stanza
+    # Input 2: A corrected text string parsed by Stanza
     # Input 3: A flag for standard Levenshtein alignment
     def __init__(self, orig, cor, lev=False):
         # Set orig and cor
@@ -79,8 +79,8 @@ class Alignment:
         # Return the matrices
         return cost_matrix, op_matrix
 
-    # Input 1: A spacy orig Token
-    # Input 2: A spacy cor Token
+    # Input 1: A Stanza orig Token
+    # Input 2: A Stanza cor Token
     # Output: A linguistic cost between 0 < x < 2
     def get_sub_cost(self, o, c):
         # Short circuit if the only difference is case

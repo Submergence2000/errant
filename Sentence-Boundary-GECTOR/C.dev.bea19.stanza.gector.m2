@@ -1,6 +1,5 @@
 S Dear Mrs. Ashby , Yesterday I was in Green Pepper Cafe for a meal with colleagues and I have seen the advertisement for a job at weekends in your cafe .
-A 18 19|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
-A 19 20|||R:MORPH|||saw|||REQUIRED|||-NONE-|||0
+A 18 20|||R:OTHER|||saw|||REQUIRED|||-NONE-|||0
 
 S I am very interested in this work and believe that my employment background is appropriate for it .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -70,8 +69,7 @@ S Similarly , people in countries with less income turn to these services becaus
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S To conclude , the future of public transport will depend on the usage people give it .
-A 12 13|||R:MORPH|||use|||REQUIRED|||-NONE-|||0
-A 13 13|||M:ADP|||of|||REQUIRED|||-NONE-|||0
+A 12 13|||R:OTHER|||use of|||REQUIRED|||-NONE-|||0
 A 14 15|||R:VERB|||use|||REQUIRED|||-NONE-|||0
 
 S There will be countries in which there will be no need for it , and in others where they will need it as long as their economy needs it .
@@ -280,8 +278,7 @@ S I 'm good at school , my marks could prove it ; I have worked hard since the b
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S These days I started studyng English in particular because it is the most important language in the world , so I need to know it well if I want to communicate with other people from other countries .
-A 0 1|||R:ADV|||Recently|||REQUIRED|||-NONE-|||0
-A 1 2|||R:OTHER|||,|||REQUIRED|||-NONE-|||0
+A 0 2|||R:OTHER|||Recently ,|||REQUIRED|||-NONE-|||0
 A 4 5|||R:VERB:INFL|||studying|||REQUIRED|||-NONE-|||0
 
 S School is my life : I study about seven hours a day , especially maths and electronics that are the subjects that I like more .
@@ -618,8 +615,7 @@ S It was the day when she was going to meet her biological mother .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S She knew she was adopted since she was 7 years old because her parents told her about it .
-A 1 1|||M:VERB:TENSE|||had|||REQUIRED|||-NONE-|||0
-A 1 2|||R:MORPH|||known|||REQUIRED|||-NONE-|||0
+A 1 2|||R:OTHER|||had known|||REQUIRED|||-NONE-|||0
 
 S She did not feel bad about it because she loves her parents very much and she feels loved by them .
 A 9 10|||R:MORPH|||loved|||REQUIRED|||-NONE-|||0
@@ -725,8 +721,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S My only complaint is there are too many delicious choices on the menu , it is often difficult deciding what to order .
 A 13 15|||R:PUNCT|||. It|||REQUIRED|||-NONE-|||0
-A 18 18|||M:VERB:FORM|||to|||REQUIRED|||-NONE-|||0
-A 18 19|||R:MORPH|||decide|||REQUIRED|||-NONE-|||0
+A 18 19|||R:VERB:FORM|||to decide|||REQUIRED|||-NONE-|||0
 
 S So far I have never been disappointed .
 A 2 2|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -1273,8 +1268,7 @@ S We can not ignore the fact that companies which cooperate with this infrastruc
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Even if companies will hire engineers and specialists mostly from abroad , there will be upgrowth in a number of job positions in gastronomy and hospitality zones as they need to eat and sleep somewhere .
-A 15 15|||M:DET|||an|||REQUIRED|||-NONE-|||0
-A 15 16|||R:NOUN|||increase|||REQUIRED|||-NONE-|||0
+A 15 16|||R:OTHER|||an increase|||REQUIRED|||-NONE-|||0
 A 17 18|||R:DET|||the|||REQUIRED|||-NONE-|||0
 
 S According to the dynamics of development of the natural gas infrastructure , there will be constant development in gastronomy and hospitality sectors as well .
@@ -1358,8 +1352,7 @@ S For example , I once had a chemistry exam in high school and I was ignorant en
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Two days before my exam , I realized that I ran out of time .
-A 10 10|||M:VERB:TENSE|||had|||REQUIRED|||-NONE-|||0
-A 10 11|||R:MORPH|||run|||REQUIRED|||-NONE-|||0
+A 10 11|||R:OTHER|||had run|||REQUIRED|||-NONE-|||0
 
 S I had insomnia the night of my exam , it was n't enough that I was n't well prepared but also my nerves got torn out and that affected my scores tremendously .
 A 8 10|||R:PUNCT|||. It|||REQUIRED|||-NONE-|||0
@@ -1517,8 +1510,7 @@ S You do also get a gift as a new account holder , a full set of saucepans ( do 
 A 22 23|||R:PRON|||them|||REQUIRED|||-NONE-|||0
 
 S All in all , I would recommend you to open your first serving account in the Phone Bank , since the rate of interest is higher and you do n't need to pay any annual charges .
-A 12 12|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
-A 12 13|||R:NOUN|||time|||REQUIRED|||-NONE-|||0
+A 12 13|||R:OTHER|||- time|||REQUIRED|||-NONE-|||0
 
 S And doing operations by phone are actually very easy and they always give you a great opportunity to improve your English .
 A 5 6|||R:AUX|||is|||REQUIRED|||-NONE-|||0
@@ -2010,8 +2002,7 @@ A 1 3|||U:OTHER||||||REQUIRED|||-NONE-|||0
 A 27 29|||R:PUNCT|||. You|||REQUIRED|||-NONE-|||0
 
 S On the other hand , many teens who take a year off end up to spend it in the wrong way .
-A 14 15|||U:VERB:FORM||||||REQUIRED|||-NONE-|||0
-A 15 16|||R:MORPH|||spending|||REQUIRED|||-NONE-|||0
+A 14 16|||R:VERB:FORM|||spending|||REQUIRED|||-NONE-|||0
 
 S For example , things might gone not as they had expected for multiple reasons such as not having enoff money or not getting a job .
 A 5 5|||M:VERB:TENSE|||have|||REQUIRED|||-NONE-|||0
@@ -2020,8 +2011,7 @@ A 14 14|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 18 19|||R:ADJ|||enough|||REQUIRED|||-NONE-|||0
 
 S In conclusion , people should take a year off , but only when they have all planed and know for shore that they have the possibility to do something useful with their time .
-A 16 16|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 16 17|||R:MORPH|||plans|||REQUIRED|||-NONE-|||0
+A 16 17|||R:OTHER|||the plans|||REQUIRED|||-NONE-|||0
 A 20 21|||R:OTHER|||know|||REQUIRED|||-NONE-|||0
 
 S Hello , my name is Lidia , I am 27 years old and I am going to take just a minute of your time to explain why hiring me will benefit your organization .
@@ -2184,8 +2174,7 @@ S There is no future for public transport ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The number of cars grow up rapidly , however the public transport is still in use .
-A 4 4|||M:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
-A 4 5|||R:MORPH|||growing|||REQUIRED|||-NONE-|||0
+A 4 5|||R:OTHER|||is growing|||REQUIRED|||-NONE-|||0
 A 5 6|||U:ADP||||||REQUIRED|||-NONE-|||0
 A 7 7|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 7 9|||R:WO|||However ,|||REQUIRED|||-NONE-|||0
@@ -2242,8 +2231,7 @@ S Being back to our everyday life .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Most of us are living in a big cities and face problems with the traffic .
-A 3 4|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
-A 4 5|||R:MORPH|||live|||REQUIRED|||-NONE-|||0
+A 3 5|||R:OTHER|||live|||REQUIRED|||-NONE-|||0
 A 6 7|||U:DET||||||REQUIRED|||-NONE-|||0
 A 13 14|||U:DET||||||REQUIRED|||-NONE-|||0
 
@@ -2360,8 +2348,7 @@ A 10 10|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 17 17|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Max and his friends took a walk under the trees when , acroos the river , they saw something that looked like an animal lying on the grass.
-A 4 4|||M:VERB:TENSE|||were|||REQUIRED|||-NONE-|||0
-A 4 5|||R:MORPH|||taking|||REQUIRED|||-NONE-|||0
+A 4 5|||R:OTHER|||were taking|||REQUIRED|||-NONE-|||0
 A 12 13|||R:SPELL|||across|||REQUIRED|||-NONE-|||0
 
 S "
@@ -2695,8 +2682,7 @@ S The site is the property of the country on whose territory it is located , but
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Its protection and preservation becomes a concern of the international World Heritage community as a whole .
-A 4 4|||M:VERB:TENSE|||has|||REQUIRED|||-NONE-|||0
-A 4 5|||R:MORPH|||become|||REQUIRED|||-NONE-|||0
+A 4 5|||R:OTHER|||has become|||REQUIRED|||-NONE-|||0
 
 S Another advantage for a site to be inscribed on the List is that once a country signs the Convention , and has sites inscribed on the World Heritage List ; the resulting prestige often helps raise awareness among citizens and governments for heritage preservation .
 A 29 30|||R:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -2715,8 +2701,7 @@ A 24 25|||R:ADP|||against|||REQUIRED|||-NONE-|||0
 S Moreover they remind in the list of sites in danger without to receive assistance .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 2 3|||R:MORPH|||reminded|||REQUIRED|||-NONE-|||0
-A 11 12|||U:VERB:FORM||||||REQUIRED|||-NONE-|||0
-A 12 13|||R:MORPH|||receiving|||REQUIRED|||-NONE-|||0
+A 11 13|||R:VERB:FORM|||receiving|||REQUIRED|||-NONE-|||0
 
 S In my opinion the sites in danger unless they not answer at ten criteria should be protect for UNESCO .
 A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -2802,8 +2787,7 @@ S What is on my Bucket List ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I ca n't stop thinking about it , because I realized that I had never stopped to think about my life in such a deep way .
-A 16 17|||U:VERB:FORM||||||REQUIRED|||-NONE-|||0
-A 17 18|||R:MORPH|||thinking|||REQUIRED|||-NONE-|||0
+A 16 18|||R:VERB:FORM|||thinking|||REQUIRED|||-NONE-|||0
 
 S By the way , do you know what a Bucket List is ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2942,8 +2926,7 @@ S Could you ask your parents ' permission ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S In this Camp parents are calm and do n't worry about their children because they are in the care of a large number of assistants and the camp is situated on an entire island .
-A 2 3|||R:ORTH|||camp|||REQUIRED|||-NONE-|||0
-A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
+A 2 3|||R:OTHER|||camp ,|||REQUIRED|||-NONE-|||0
 
 S In addition , the site was purpose built to provide places fit for young people allowing them to do lots of activities in safety .
 A 15 15|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -3394,8 +3377,7 @@ S Students , children from large families , old people will continue to use publ
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Secondly , cars can also turn into public transport .
-A 5 5|||M:VERB:TENSE|||be|||REQUIRED|||-NONE-|||0
-A 5 6|||R:MORPH|||turned|||REQUIRED|||-NONE-|||0
+A 5 6|||R:OTHER|||be turned|||REQUIRED|||-NONE-|||0
 
 S Science fiction often depicts future as the world where cars are used freely .
 A 4 4|||M:DET|||the|||REQUIRED|||-NONE-|||0

@@ -1,5 +1,4 @@
 from importlib import import_module
-import spacy
 import json
 import stanza
 from errant.annotator import Annotator
@@ -15,7 +14,7 @@ def load(lang, nlp=None, legacy=False):
         if lang not in supported:
             raise ValueError(f"{lang} is an unsupported or unknown language")
 
-        # Load spacy (small model if no model supplied)
+        # Load Stanza pipeline
         nlp = nlp or stanza.Pipeline(lang, tokenize_pretokenized=True)
         
         # Load language edit merger

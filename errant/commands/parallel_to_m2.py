@@ -22,7 +22,7 @@ def main():
             cors = line[1:]
             # Skip the line if orig is empty
             if not orig: continue
-            # Parse orig with spacy
+            # Parse orig with Stanza
             orig = annotator.parse(orig.strip())
             # Write orig to the output m2 file
             out_m2.write("S " + orig.text +"\n")
@@ -33,7 +33,7 @@ def main():
                     out_m2.write(noop_edit(cor_id)+"\n")
                 # Otherwise, do extra processing
                 else:
-                    # Parse cor with spacy
+                    # Parse cor with Stanza
                     cor = annotator.parse(cor.strip())
                     # Align the texts and extract and classify the edits
                     edits = annotator.annotate(orig, cor, args.lev, args.merge)
