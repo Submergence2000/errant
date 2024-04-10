@@ -220,14 +220,14 @@ def get_two_sided_type(o_toks, c_toks):
                         return "VERB:FORM"
                     # Use fine PTB tags to find various errors.
                     # FORM errors normally involve VBG or VBN.
-                    if o_toks[0].upos in {"VBG", "VBN"} or \
-                            c_toks[0].upos in {"VBG", "VBN"}:
+                    if o_toks[0].xpos in {"VBG", "VBN"} or \
+                            c_toks[0].xpos in {"VBG", "VBN"}:
                         return "VERB:FORM"
                     # Of what's left, TENSE errors normally involved VBD.
-                    if o_toks[0].upos == "VBD" or c_toks[0].upos == "VBD":
+                    if o_toks[0].xpos == "VBD" or c_toks[0].xpos == "VBD":
                         return "VERB:TENSE"
                     # Of what's left, SVA errors normally involve VBZ.
-                    if o_toks[0].upos == "VBZ" or c_toks[0].upos == "VBZ":
+                    if o_toks[0].xpos == "VBZ" or c_toks[0].xpos == "VBZ":
                         return "VERB:SVA"
                     # Any remaining aux verbs are called TENSE.
                     if o_dep[0].startswith("aux") and \
@@ -237,14 +237,14 @@ def get_two_sided_type(o_toks, c_toks):
             if set(o_dep+c_dep).issubset({"acomp", "amod"}):
                 return "ADJ:FORM"
             # Adj to plural noun is usually noun number; e.g. musical -> musicals.
-            if o_pos[0] == "ADJ" and c_toks[0].upos == "NNS":
+            if o_pos[0] == "ADJ" and c_toks[0].xpos == "NNS":
                 return "NOUN:NUM"
             # For remaining verb errors (rare), rely on c_pos
-            if c_toks[0].upos in {"VBG", "VBN"}:
+            if c_toks[0].xpos in {"VBG", "VBN"}:
                 return "VERB:FORM"
-            if c_toks[0].upos == "VBD":
+            if c_toks[0].xpos == "VBD":
                 return "VERB:TENSE"
-            if c_toks[0].upos == "VBZ":
+            if c_toks[0].xpos == "VBZ":
                 return "VERB:SVA"
             # Tricky cases that all have the same lemma.
             else:
