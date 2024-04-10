@@ -2,7 +2,7 @@ S Dear Paul !
 A 2 3|||R:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S I haven't written you for ages but I was very busy because of the exams at the University .
-A 3 3|||M:ADP|||to|||REQUIRED|||-NONE-|||0
+A 3 3|||M:PREP|||to|||REQUIRED|||-NONE-|||0
 A 16 17|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S What about you?
@@ -60,7 +60,7 @@ S There are adds in TV , radio , bus , streets ...
 A 8 9|||R:NOUN:NUM|||buses|||REQUIRED|||-NONE-|||0
 
 S In spite of this range of media , the TV continues being the most important means of communication .
-A 11 12|||R:OTHER|||to be|||REQUIRED|||-NONE-|||0
+A 11 12|||R:VERB:FORM|||to be|||REQUIRED|||-NONE-|||0
 
 S A lot of people think that there are too many adds on television but , is like that ?
 A 13 13|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -78,7 +78,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The TV is the most accesible way of communication and people can see the messagen on this way .
 A 14 15|||R:SPELL|||messages|||REQUIRED|||-NONE-|||0
-A 15 16|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 15 16|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S In addition , behind one add there are a lot of things : one industry .
 A 5 6|||R:OTHER|||addition|||REQUIRED|||-NONE-|||0
@@ -86,7 +86,7 @@ A 5 6|||R:OTHER|||addition|||REQUIRED|||-NONE-|||0
 S In one add there are , for example , the publicist 's work , the companies investments , future sales , the product or service 's life ...
 A 1 3|||R:OTHER|||addition ,|||REQUIRED|||-NONE-|||0
 A 4 5|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
-A 16 16|||M:PART|||'|||REQUIRED|||-NONE-|||0
+A 16 16|||M:NOUN:POSS|||'|||REQUIRED|||-NONE-|||0
 
 S To sum up , there are a lot of adds in TV but they are necessary and beneficial for everyone .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -114,7 +114,7 @@ A 11 12|||R:MORPH|||sunbathe|||REQUIRED|||-NONE-|||0
 A 15 16|||R:ADV|||rather|||REQUIRED|||-NONE-|||0
 A 17 18|||R:VERB|||having|||REQUIRED|||-NONE-|||0
 A 24 25|||R:VERB:FORM|||running|||REQUIRED|||-NONE-|||0
-A 25 26|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 25 26|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S I think those activities are very regenerating and they make you forget about all the warmness of summer .
 A 15 16|||R:MORPH|||warmth|||REQUIRED|||-NONE-|||0
@@ -137,19 +137,19 @@ A 10 11|||R:NOUN:NUM|||language|||REQUIRED|||-NONE-|||0
 A 18 20|||R:PUNCT|||. That|||REQUIRED|||-NONE-|||0
 
 S I have some experience working with children from all ages , besides I do n't mind hard work and I learn quickly .
-A 7 8|||R:ADP|||of|||REQUIRED|||-NONE-|||0
+A 7 8|||R:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S Also I 've just got my FCE certificate this year but it would help me a lot if I practised my English in a native country .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 10 10|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 23 24|||R:OTHER|||my|||REQUIRED|||-NONE-|||0
+A 23 24|||R:DET|||my|||REQUIRED|||-NONE-|||0
 
 S I consider myself really active , sociable , well - organized and above all patient , therefore I think I 'm suitable for this job as I can adapt myself easily at any kind of situation or environment , especially working overseas plus it would be a nice experience because I would meet new people and a different culture .
 A 12 12|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 14 14|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 15 15|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 15 17|||R:WO|||Therefore ,|||REQUIRED|||-NONE-|||0
-A 31 32|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 31 32|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 A 42 42|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S I 'm looking forward to hearing from you soon .
@@ -177,7 +177,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S He invited all his friends from team and made a party .
 A 6 6|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 8 9|||R:OTHER|||set up|||REQUIRED|||-NONE-|||0
+A 8 9|||R:VERB|||set up|||REQUIRED|||-NONE-|||0
 
 S Tom wanted Mel , his girlfriend , to come too .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -198,10 +198,10 @@ S He wanted to break up with her at that party .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S He was waiting 2 hours for her .
-A 1 3|||R:OTHER|||waited|||REQUIRED|||-NONE-|||0
+A 1 3|||R:VERB:TENSE|||waited|||REQUIRED|||-NONE-|||0
 
 S He hated that she is always late .
-A 4 5|||R:AUX|||was|||REQUIRED|||-NONE-|||0
+A 4 5|||R:VERB:TENSE|||was|||REQUIRED|||-NONE-|||0
 
 S That was the main reason he wanted to end it up .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -220,7 +220,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Mel looked sadly at Tom , then said : " I 'm pregnant ... " and got out of his home .
 A 16 17|||R:VERB|||went|||REQUIRED|||-NONE-|||0
-A 19 20|||R:OTHER|||the|||REQUIRED|||-NONE-|||0
+A 19 20|||R:DET|||the|||REQUIRED|||-NONE-|||0
 A 20 21|||R:NOUN|||house|||REQUIRED|||-NONE-|||0
 
 S He followed and apoligized her .
@@ -311,7 +311,7 @@ S I recommend that you do n't have to give up before trying , because is fairly 
 A 4 5|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
 A 6 8|||U:VERB||||||REQUIRED|||-NONE-|||0
 A 14 14|||M:PRON|||it|||REQUIRED|||-NONE-|||0
-A 20 21|||R:VERB:SVA|||give|||REQUIRED|||-NONE-|||0
+A 20 21|||R:VERB:FORM|||give|||REQUIRED|||-NONE-|||0
 A 24 25|||R:NOUN:NUM|||satisfaction|||REQUIRED|||-NONE-|||0
 
 S Your efforts will be prized by succeeding , and you can obtain it with practice .
@@ -363,7 +363,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I 'm writing to tell you the best way to arrive at Salou .
 A 10 11|||R:VERB|||get|||REQUIRED|||-NONE-|||0
-A 11 12|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S You will come to the Reus airport , right ? .
 A 4 5|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -407,7 +407,7 @@ S Best Regards , Mary Dear Sergio García A , My name is Guillermo Sedillo Tórr
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I am Engineer of Execution in Mines , entitled in the " Instituto Profesional Virginio Gómez " .
-A 9 10|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S I am particularly interested and I am competent to apply for the post of Chief of operations at the new underground project Chiquicamata .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -423,8 +423,8 @@ S I am also able to lead the operations of the project responsibly and through a
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S My work experience is very outstanding due to I had the privilege of belonging to the " Minera El Teniente " as shift manager , Chief of operations at " Minera Andina " and at the evaluation department of CODELCO projects .
-A 6 7|||U:ADP||||||REQUIRED|||-NONE-|||0
-A 7 8|||R:SCONJ|||because|||REQUIRED|||-NONE-|||0
+A 6 7|||R:PREP|||because|||REQUIRED|||-NONE-|||0
+A 7 8|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S I really appreciate your time and consideration .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -433,7 +433,7 @@ S It would be a pleasure to discuss personally why I am qualified for this posit
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I expect a prompt response of the Company .
-A 5 6|||R:ADP|||from|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||from|||REQUIRED|||-NONE-|||0
 A 7 8|||R:ORTH|||company|||REQUIRED|||-NONE-|||0
 
 S Without further ado , I remain yours .
@@ -460,13 +460,12 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Today globalization is bringing the world more close , that means that there are more possibilities to have contact with the other cultures , for example in literature , poetry , films , TV programs , music or some other aspect of the culture .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 6 7|||U:ADV||||||REQUIRED|||-NONE-|||0
-A 7 8|||R:MORPH|||closer|||REQUIRED|||-NONE-|||0
+A 6 8|||R:ADV|||closer|||REQUIRED|||-NONE-|||0
 A 8 10|||R:PUNCT|||. That|||REQUIRED|||-NONE-|||0
 A 20 21|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S On balance , learning foreign languages is very positive on different aspect , so if you have the positivity of learning a new language do it , because it will bring you many benefits .
-A 9 10|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 A 11 12|||R:NOUN|||ways|||REQUIRED|||-NONE-|||0
 A 18 19|||R:NOUN|||potential|||REQUIRED|||-NONE-|||0
 A 24 24|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -486,7 +485,7 @@ S I have a mobile model Nokia 1214 which needs batteries model 002545 .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The delivery was wrong , so now I am a huge hurry because I need my mobile to work every day .
-A 9 9|||M:ADP|||in|||REQUIRED|||-NONE-|||0
+A 9 9|||M:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S If I have not mobile I will not be able to work .
 A 3 4|||R:OTHER|||a|||REQUIRED|||-NONE-|||0
@@ -497,7 +496,7 @@ A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S The delivery error has been made by yours , so this time ,
 A 3 4|||R:VERB:TENSE|||had|||REQUIRED|||-NONE-|||0
-A 7 8|||R:PRON|||you|||REQUIRED|||-NONE-|||0
+A 7 8|||R:OTHER|||you|||REQUIRED|||-NONE-|||0
 
 S It should be sent with free delivery .
 A 5 5|||M:DET|||a|||REQUIRED|||-NONE-|||0
@@ -515,10 +514,10 @@ S Yours faithfully , Julio Camarillo
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The aim of this report is to evaluate both bad effects and good effects from the users'opinions in the Active Leisure Club in the last time .
-A 22 23|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 22 23|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S First , people in this area have actually found a suitable place to enjoy their time through a wide range of activities , games which are held creatively and effectively and have been suitable for different ages .
-A 31 33|||R:AUX|||are|||REQUIRED|||-NONE-|||0
+A 31 33|||R:VERB:TENSE|||are|||REQUIRED|||-NONE-|||0
 
 S Besides , it has enough modern facilities to serve the users in the peak hours and the guiders are everywhere and ready give a help .
 A 22 22|||M:VERB:FORM|||to|||REQUIRED|||-NONE-|||0
@@ -527,10 +526,10 @@ A 23 24|||U:DET||||||REQUIRED|||-NONE-|||0
 S However , only one thing that we dislike With the purpose to actract more peole to join in the club , besises its good points , I will highly recommend that they should arrange the time suitably and avoi they hold the acivities to avoid the problems Given is a diagram introducing the procedures of making bank notes .
 A 2 2|||M:OTHER|||there is|||REQUIRED|||-NONE-|||0
 A 8 8|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 11 12|||R:OTHER|||of|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PART|||of|||REQUIRED|||-NONE-|||0
 A 12 13|||R:SPELL|||attracting|||REQUIRED|||-NONE-|||0
 A 14 15|||R:SPELL|||people|||REQUIRED|||-NONE-|||0
-A 17 18|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 17 18|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 27 28|||R:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0
 A 38 39|||R:SPELL|||avoid|||REQUIRED|||-NONE-|||0
 A 39 41|||R:OTHER|||holding|||REQUIRED|||-NONE-|||0
@@ -538,7 +537,7 @@ A 42 43|||R:SPELL|||activities|||REQUIRED|||-NONE-|||0
 A 47 48|||M:PUNCT|||, given|||REQUIRED|||-NONE-|||0
 
 S Desgin the bank notes are the first and indispensable step .
-A 4 5|||R:AUX|||is|||REQUIRED|||-NONE-|||0
+A 4 5|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 
 S Peple should decide the background colour and thw artwork while they have to consider the security issues .
 A 0 1|||R:SPELL|||People|||REQUIRED|||-NONE-|||0
@@ -554,13 +553,13 @@ S Usually there will be 50 ban notes per sheet .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The colour will print on the both sides and every notes has their unique ink also the images will be slightly raised .
-A 3 4|||R:OTHER|||be printed|||REQUIRED|||-NONE-|||0
+A 3 4|||R:VERB:TENSE|||be printed|||REQUIRED|||-NONE-|||0
 A 5 6|||U:DET||||||REQUIRED|||-NONE-|||0
 A 10 11|||R:NOUN:NUM|||note|||REQUIRED|||-NONE-|||0
-A 12 13|||R:PRON|||its|||REQUIRED|||-NONE-|||0
+A 12 13|||R:DET|||its|||REQUIRED|||-NONE-|||0
 
 S After that , it comes to the most significant stage , that is inspect the quality of the printed sheets .
-A 11 12|||R:PRON|||which|||REQUIRED|||-NONE-|||0
+A 11 12|||R:DET|||which|||REQUIRED|||-NONE-|||0
 A 13 14|||R:VERB:FORM|||inspecting|||REQUIRED|||-NONE-|||0
 
 S People usually divided the quality into three parts : Good quality , Partially damaged , and bad sheets .
@@ -579,7 +578,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Eventhough it seems to be easy to make them , but every steps needs people to be very careful in order to produce the perfect bank notes for everyone .
 A 0 1|||R:ORTH|||Even though|||REQUIRED|||-NONE-|||0
-A 10 11|||U:CCONJ||||||REQUIRED|||-NONE-|||0
+A 10 11|||U:CONJ||||||REQUIRED|||-NONE-|||0
 A 12 13|||R:NOUN:NUM|||step|||REQUIRED|||-NONE-|||0
 A 13 14|||R:VERB|||requires|||REQUIRED|||-NONE-|||0
 
@@ -593,7 +592,7 @@ A 15 15|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 15 16|||R:SPELL|||happiness|||REQUIRED|||-NONE-|||0
 
 S He started to think how he could get better our lives and he found a solution .
-A 4 4|||M:ADP|||about|||REQUIRED|||-NONE-|||0
+A 4 4|||M:PREP|||about|||REQUIRED|||-NONE-|||0
 
 S A concerned population
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -606,7 +605,7 @@ A 43 43|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 44 44|||M:PRON|||it|||REQUIRED|||-NONE-|||0
 
 S Easy recycling Local authorities helped this initiative creating some places for people to leave their rubbish in order to be taken to the recycling center with the purpose of giving a new life to our waste .
-A 7 7|||M:SCONJ|||by|||REQUIRED|||-NONE-|||0
+A 7 7|||M:PREP|||by|||REQUIRED|||-NONE-|||0
 
 S The results
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -615,15 +614,15 @@ S As a result of this attitude , since Alfred had this great idea , we enjoy one
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S People now is worried about the future of our planet and an association has been created in order to promote the care of our planet , Green Planet is called .
-A 1 1|||M:AUX|||are|||REQUIRED|||-NONE-|||0
-A 2 3|||U:AUX||||||REQUIRED|||-NONE-|||0
+A 1 1|||M:VERB|||are|||REQUIRED|||-NONE-|||0
+A 2 3|||U:VERB||||||REQUIRED|||-NONE-|||0
 A 25 26|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S We want a happy Earth .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Hello Luis Blanco , I 'm writing you about the staff recruitment for the " New Cloud Generation " project .
-A 7 7|||M:ADP|||to|||REQUIRED|||-NONE-|||0
+A 7 7|||M:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S So we need your help with some questions about the process .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -692,11 +691,11 @@ A 8 9|||R:VERB:TENSE|||was|||REQUIRED|||-NONE-|||0
 A 10 10|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 12 14|||R:PUNCT|||. Above|||REQUIRED|||-NONE-|||0
 A 15 15|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 19 20|||R:SCONJ|||with|||REQUIRED|||-NONE-|||0
+A 19 20|||R:PREP|||with|||REQUIRED|||-NONE-|||0
 A 21 21|||M:OTHER|||up the|||REQUIRED|||-NONE-|||0
 
 S But that concert was worth of my work , so I hope I will be invited to their next event .
-A 5 6|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 5 6|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S Working for them was a real pleasure .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -734,7 +733,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S This way we made the most of us and never gave up improving our English level .
 A 2 2|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 7 8|||R:PRON|||ourselves|||REQUIRED|||-NONE-|||0
-A 12 12|||M:SCONJ|||on|||REQUIRED|||-NONE-|||0
+A 12 12|||M:PREP|||on|||REQUIRED|||-NONE-|||0
 
 S Third , phonetic classes scheduled on Fridays came really in handy .
 A 7 8|||R:VERB:TENSE|||come|||REQUIRED|||-NONE-|||0
@@ -783,7 +782,7 @@ S I am 20 years old , living in Port - Said , Egypt .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I am a student in the 3rd year of the faculty of medicine Port - Said University .
-A 13 13|||M:ADP|||at|||REQUIRED|||-NONE-|||0
+A 13 13|||M:PREP|||at|||REQUIRED|||-NONE-|||0
 
 S My father works as a teacher and so does my mother .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -799,7 +798,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I am interested in scientific research and analyzing information so I am taking a lot of courses and training in this field as I want to be one of the greatest researchers in the world in addition to becoming a member in World Health Organization ( WHO ) .
 A 9 9|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 41 42|||R:ADP|||of|||REQUIRED|||-NONE-|||0
+A 41 42|||R:PREP|||of|||REQUIRED|||-NONE-|||0
 A 42 42|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S It is n't just a dream in my mind but I work hard to make this dream come true .
@@ -836,8 +835,8 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I learnt from Research that you can do everything in anytime in addition a little tired can change the life for the better .
 A 3 4|||R:ORTH|||research|||REQUIRED|||-NONE-|||0
-A 8 9|||R:PRON|||anything|||REQUIRED|||-NONE-|||0
-A 9 10|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 8 9|||R:NOUN|||anything|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 11 12|||M:PUNCT|||. In|||REQUIRED|||-NONE-|||0
 A 13 13|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 18 19|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -852,13 +851,13 @@ S I am writing with reference to the post of job as a camp monitor that you requ
 A 8 10|||U:OTHER||||||REQUIRED|||-NONE-|||0
 
 S I have seen your advert this morning and I am really interested in it .
-A 1 3|||R:OTHER|||saw|||REQUIRED|||-NONE-|||0
+A 1 3|||R:VERB:TENSE|||saw|||REQUIRED|||-NONE-|||0
 
 S Although I am a young girl , I think I am a quialified person for the post .
-A 12 13|||R:ADJ|||quality|||REQUIRED|||-NONE-|||0
+A 12 13|||R:NOUN|||quality|||REQUIRED|||-NONE-|||0
 
 S I am a preschool teacher and I have experience looking after chilren from 3 to twelve yeras old .
-A 9 9|||M:SCONJ|||of|||REQUIRED|||-NONE-|||0
+A 9 9|||M:PREP|||of|||REQUIRED|||-NONE-|||0
 A 11 12|||R:SPELL|||children|||REQUIRED|||-NONE-|||0
 A 16 17|||R:SPELL|||years|||REQUIRED|||-NONE-|||0
 
@@ -883,7 +882,7 @@ S Instead I believe it is an advantage .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Young people are usually hard - working and active person .
-A 9 10|||R:NOUN:NUM|||people|||REQUIRED|||-NONE-|||0
+A 9 10|||R:NOUN|||people|||REQUIRED|||-NONE-|||0
 
 S If you require any further information , please do not hesitate to contact me .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -895,7 +894,7 @@ S I would be grateful if you could give me an interview at your earliest conveni
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I would be really appreciate it because I am looking forward to starting work .
-A 2 3|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
+A 2 3|||U:VERB||||||REQUIRED|||-NONE-|||0
 
 S Is there a future for Privately owned cars ?
 A 5 6|||R:ORTH|||privately|||REQUIRED|||-NONE-|||0
@@ -907,7 +906,7 @@ S Although privately oned cars are more and more popular , and they are increasi
 A 32 33|||R:VERB:TENSE|||will|||REQUIRED|||-NONE-|||0
 
 S Most people today realize that in our cities and in our planet there ia an increasing problem of space and pollution .
-A 9 10|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 13 14|||R:SPELL|||is|||REQUIRED|||-NONE-|||0
 
 S Carbon based fuels will not last forever .
@@ -915,27 +914,27 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I would say that most probably private care are not " sustainables " in the long term , and it will be necessary to revert to some sort of public transport .
 A 5 6|||U:ADV||||||REQUIRED|||-NONE-|||0
-A 8 9|||R:AUX|||is|||REQUIRED|||-NONE-|||0
+A 8 9|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 A 11 12|||R:MORPH|||sustainable|||REQUIRED|||-NONE-|||0
 
 S The population growth forecast tells us that in the next 35 years the world population will grow of a staggering 3 billions human beings .
-A 17 18|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 17 18|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 A 21 22|||R:MORPH|||billion|||REQUIRED|||-NONE-|||0
 
 S I know that it is nice to dream a future of technological people flying around , each of them with its own private small helicopter .
-A 8 8|||M:ADP|||of|||REQUIRED|||-NONE-|||0
+A 8 8|||M:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S But it is not going to happen .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I guess that in our future there are no helicopters , and not even cars .
-A 7 8|||R:OTHER|||will be|||REQUIRED|||-NONE-|||0
+A 7 8|||R:VERB:TENSE|||will be|||REQUIRED|||-NONE-|||0
 
 S States and local authorities will have to tackle the problem and provide the public with a better alternative .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S T he price for independent transport will grow dramatically .
-A 3 4|||R:ADP|||of|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S I reckon that that will change the habits of the public .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -944,18 +943,18 @@ S Even though we will have to read the timetable and to learn again to be on tim
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Imagine this picture : the first class of this semester , students are yawning and do not pay attention on the teacher ; while the teacher ask for the answer , students can not answer because they totally can not remember what they have studied in last semester .
-A 19 20|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 19 20|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 A 26 27|||R:VERB:SVA|||asks|||REQUIRED|||-NONE-|||0
 A 43 44|||R:VERB:TENSE|||had|||REQUIRED|||-NONE-|||0
-A 45 46|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 45 46|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S Students could receive a better , more efficient education if they spend 11 months a year studying partly because of after the long vacation , students will not remember the knowledge they have learned , partly because of long vacation will let students used to have fun instead of study , and partly because of some difficult courses should be continually studying .
 A 17 17|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 19 20|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 19 20|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 21 22|||R:DET|||a|||REQUIRED|||-NONE-|||0
-A 37 38|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 37 38|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 39 40|||R:NOUN:NUM|||vacations|||REQUIRED|||-NONE-|||0
-A 43 43|||M:VERB:TENSE|||get|||REQUIRED|||-NONE-|||0
+A 43 43|||M:VERB|||get|||REQUIRED|||-NONE-|||0
 A 45 46|||R:VERB:FORM|||having|||REQUIRED|||-NONE-|||0
 A 49 50|||R:VERB:FORM|||studying|||REQUIRED|||-NONE-|||0
 
@@ -970,7 +969,7 @@ S To begin with , there is a general consensus , students will forget the knowle
 A 22 23|||U:NOUN||||||REQUIRED|||-NONE-|||0
 
 S For example , on history class , history teacher have to repeat teaching the history of North America before he start to teach the history of South America in the beginning of the semester .
-A 3 4|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 A 7 7|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 9 10|||R:VERB:SVA|||has|||REQUIRED|||-NONE-|||0
 A 20 21|||R:VERB:SVA|||starts|||REQUIRED|||-NONE-|||0
@@ -981,16 +980,16 @@ A 3 4|||R:OTHER|||waste of|||REQUIRED|||-NONE-|||0
 
 S Next to go would be , students get used to relax by having no study and homework in the long vacation .
 A 5 6|||U:PUNCT||||||REQUIRED|||-NONE-|||0
-A 10 11|||R:MORPH|||relaxing|||REQUIRED|||-NONE-|||0
-A 14 15|||R:NOUN:NUM|||studying|||REQUIRED|||-NONE-|||0
-A 17 18|||R:ADP|||during|||REQUIRED|||-NONE-|||0
+A 10 11|||R:VERB:FORM|||relaxing|||REQUIRED|||-NONE-|||0
+A 14 15|||R:MORPH|||studying|||REQUIRED|||-NONE-|||0
+A 17 18|||R:PREP|||during|||REQUIRED|||-NONE-|||0
 
 S For example , when the semester start , students can not get away from the sunshine , beach , and travelling .
 A 6 7|||R:VERB:SVA|||starts|||REQUIRED|||-NONE-|||0
 
 S In the class , students will recall the joyful time they had instead paying attention on the teacher .
-A 13 13|||M:SCONJ|||of|||REQUIRED|||-NONE-|||0
-A 15 16|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 13 13|||M:PREP|||of|||REQUIRED|||-NONE-|||0
+A 15 16|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S Last but not least , some difficult courses should be continually studying rather than having long a break time .
 A 11 12|||R:VERB:FORM|||studied|||REQUIRED|||-NONE-|||0
@@ -1008,7 +1007,7 @@ S My favourite sport is the soccer .
 A 4 5|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S I enjoy this sport since I was a child , I always remember when my father and my brother teach me to play it .
-A 1 2|||R:OTHER|||have enjoyed|||REQUIRED|||-NONE-|||0
+A 1 2|||R:VERB:TENSE|||have enjoyed|||REQUIRED|||-NONE-|||0
 A 9 10|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 19 20|||R:VERB:TENSE|||taught|||REQUIRED|||-NONE-|||0
 
@@ -1020,8 +1019,8 @@ S I played soccer in different teams in my neighborhood , school or university .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I always enjoy playing soccer because when I am in the playing field I forget all problems .
-A 9 10|||R:ADP|||on|||REQUIRED|||-NONE-|||0
-A 16 16|||M:PRON|||my|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||on|||REQUIRED|||-NONE-|||0
+A 16 16|||M:DET|||my|||REQUIRED|||-NONE-|||0
 
 S I like to speak with my team partners .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -1066,7 +1065,7 @@ S On september 12th,2014 I went to New York city .
 A 1 2|||R:ORTH|||September|||REQUIRED|||-NONE-|||0
 
 S In the fly I was very happy because I received a lot of food .
-A 0 1|||R:ADP|||On|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||On|||REQUIRED|||-NONE-|||0
 A 2 3|||R:NOUN|||flight|||REQUIRED|||-NONE-|||0
 
 S The flight was approximatly five hours where I watch beautiful movies .
@@ -1090,18 +1089,18 @@ S My uncle had the awesome idea of going to Niagara Falls .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S We went in car and it was about 8 hours long .
-A 2 3|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 2 3|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 
 S Finally we arrived to Niagara Falls city that looks like a ghost place .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 3 4|||R:ADP|||at|||REQUIRED|||-NONE-|||0
-A 7 8|||R:PRON|||which|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||at|||REQUIRED|||-NONE-|||0
+A 7 8|||R:DET|||which|||REQUIRED|||-NONE-|||0
 
 S It does not have too much to do but there were the falls .
 A 8 8|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S I was amazed of how huge were the falls .
-A 3 4|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 6 9|||R:WO|||the falls were|||REQUIRED|||-NONE-|||0
 
 S They were incredible amazing and beautiful .
@@ -1134,10 +1133,10 @@ A 13 14|||R:VERB:TENSE|||visited|||REQUIRED|||-NONE-|||0
 A 16 16|||M:ADJ|||such|||REQUIRED|||-NONE-|||0
 A 23 24|||R:VERB|||received|||REQUIRED|||-NONE-|||0
 A 29 31|||R:OTHER|||ate|||REQUIRED|||-NONE-|||0
-A 33 33|||M:ADP|||of|||REQUIRED|||-NONE-|||0
+A 33 33|||M:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S Most attending students to Universities are out of the city where they used to live , so , they need an accommodation to live through their study years .
-A 3 4|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 3 4|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 4 5|||R:ORTH|||universities|||REQUIRED|||-NONE-|||0
 A 20 21|||U:DET||||||REQUIRED|||-NONE-|||0
 
@@ -1155,12 +1154,11 @@ A 36 37|||R:VERB:FORM|||learning|||REQUIRED|||-NONE-|||0
 S saving money and time will be more Obvious in university dormitories because monthly payments will be less than four times than hiring an apartment , and because it will be closer to the university , saving money and time is more efficient by reducing transportation 's costs
 A 0 1|||R:ORTH|||Saving|||REQUIRED|||-NONE-|||0
 A 7 8|||R:ORTH|||obvious|||REQUIRED|||-NONE-|||0
-A 45 46|||U:CONTR||||||REQUIRED|||-NONE-|||0
+A 45 46|||U:NOUN:POSS||||||REQUIRED|||-NONE-|||0
 
 S In spite all these benefits , I prefer- if I can - to live in an apartment where the personality is very important for me .
-A 2 2|||M:ADP|||of|||REQUIRED|||-NONE-|||0
-A 7 8|||R:OTHER|||would like|||REQUIRED|||-NONE-|||0
-A 8 8|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
+A 2 2|||M:PREP|||of|||REQUIRED|||-NONE-|||0
+A 7 8|||R:OTHER|||would like ,|||REQUIRED|||-NONE-|||0
 A 18 19|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S Many years ago , I shared a friend in a room for few months during a course outside my country , these days where I worst during my life , he was dirty , speaking loudly all time and did not share the budget of eating .
@@ -1171,13 +1169,13 @@ A 37 37|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S living alone will grant me the freedom to live by the way that I choose and still friendly with all the others without exceed the privacy of my friends . this matter will not achieved when living in shared rooms . they annoying me Although
 A 0 1|||R:ORTH|||Living|||REQUIRED|||-NONE-|||0
-A 9 10|||R:ADP|||in|||REQUIRED|||-NONE-|||0
-A 17 17|||M:AUX|||be|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||in|||REQUIRED|||-NONE-|||0
+A 17 17|||M:VERB|||be|||REQUIRED|||-NONE-|||0
 A 23 24|||R:VERB:FORM|||exceeding|||REQUIRED|||-NONE-|||0
 A 30 31|||R:ORTH|||This|||REQUIRED|||-NONE-|||0
 A 34 34|||M:VERB:TENSE|||be|||REQUIRED|||-NONE-|||0
 A 41 42|||R:ORTH|||They|||REQUIRED|||-NONE-|||0
-A 42 43|||R:VERB:FORM|||annoy|||REQUIRED|||-NONE-|||0
+A 42 43|||R:MORPH|||annoy|||REQUIRED|||-NONE-|||0
 A 44 45|||R:ORTH|||although|||REQUIRED|||-NONE-|||0
 
 S The federal government which is decided as a role of USA has many benefits according to reading passage , the lecturer believes that there is no perfect government .
@@ -1197,10 +1195,10 @@ A 8 9|||R:NOUN:NUM|||homosexuals|||REQUIRED|||-NONE-|||0
 A 11 12|||R:NOUN:NUM|||states|||REQUIRED|||-NONE-|||0
 
 S Also , the reading passage declares that even the federal government let each state function independently , it still control on the main decisions . this case causes some problems where the lecturer mentioned the failure of federal government to stop illegal immigration to USA through Nevada desert . also the control of the federal government is the reason why each of the state and the federal blame each other in the increase of the unemployment in some states
-A 8 8|||M:SCONJ|||if|||REQUIRED|||-NONE-|||0
-A 11 12|||R:VERB:SVA|||lets|||REQUIRED|||-NONE-|||0
+A 8 8|||M:PREP|||if|||REQUIRED|||-NONE-|||0
+A 11 12|||R:VERB:TENSE|||lets|||REQUIRED|||-NONE-|||0
 A 19 20|||R:VERB:SVA|||controls|||REQUIRED|||-NONE-|||0
-A 20 21|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 20 21|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 25 26|||R:ORTH|||This|||REQUIRED|||-NONE-|||0
 A 37 37|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 44 44|||M:DET|||the|||REQUIRED|||-NONE-|||0
@@ -1224,15 +1222,15 @@ S In order to enjoy travelling to Mexico I would give two important advice ; fir
 A 7 7|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 15 15|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 20 20|||M:DET|||a|||REQUIRED|||-NONE-|||0
-A 27 28|||R:ADP|||of|||REQUIRED|||-NONE-|||0
+A 27 28|||R:PART|||of|||REQUIRED|||-NONE-|||0
 
 S People say that in every voyage the people suffer to different moments of the trip : arrived , get away to the frustration of an unknown place , get alone with your trip companion , success as a traveler and arrived home triumphal .
-A 3 4|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 6 7|||U:DET||||||REQUIRED|||-NONE-|||0
-A 9 10|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 9 10|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 16 17|||R:VERB:FORM|||arriving|||REQUIRED|||-NONE-|||0
 A 18 19|||R:VERB:FORM|||getting|||REQUIRED|||-NONE-|||0
-A 20 21|||R:ADP|||from|||REQUIRED|||-NONE-|||0
+A 20 21|||R:PREP|||from|||REQUIRED|||-NONE-|||0
 A 28 29|||R:VERB:FORM|||getting|||REQUIRED|||-NONE-|||0
 A 40 41|||R:VERB:FORM|||arriving|||REQUIRED|||-NONE-|||0
 
@@ -1250,13 +1248,13 @@ A 36 36|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Other advice that I would give to people coming to Mexico is that enjoy for Mexican food .
 A 12 13|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
-A 14 15|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 14 15|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S Mexican food has a lot of tasting dishes from different states of the country .
 A 6 7|||R:ADJ|||different|||REQUIRED|||-NONE-|||0
 
 S For example , there are a lot of American people that does n't like spicy food and also most of the times could get angry with the excess of pepper that the Mexican people used to use to prepare their food .
-A 11 12|||R:VERB:TENSE|||do|||REQUIRED|||-NONE-|||0
+A 11 12|||R:VERB:SVA|||do|||REQUIRED|||-NONE-|||0
 A 18 18|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 21 22|||R:NOUN:NUM|||time|||REQUIRED|||-NONE-|||0
 A 22 22|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -1275,9 +1273,9 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S After the Internet was invented and revealed first time in August 29th 1969 , Social Media Site ( SMS ) is the next most significant innovation that has partly replaced for face to face communication .
 A 7 7|||M:OTHER|||for the|||REQUIRED|||-NONE-|||0
-A 9 10|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 14 14|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 30 31|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 30 31|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 32 32|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
 A 33 33|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
 
@@ -1296,7 +1294,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S This essay will force on benefits and disadvantages of Facebook and Twitter , and also comments potential future of these implications .
 A 5 5|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 15 16|||R:MORPH|||comment|||REQUIRED|||-NONE-|||0
+A 15 16|||R:VERB:SVA|||comment|||REQUIRED|||-NONE-|||0
 A 16 16|||M:OTHER|||on the|||REQUIRED|||-NONE-|||0
 
 S Communicating can be achieved , regardless of distance , through Facebook and Twitter .
@@ -1306,13 +1304,13 @@ S The benefit of being from being connected globally to Facebook and Twitter is 
 A 3 5|||U:OTHER||||||REQUIRED|||-NONE-|||0
 
 S Firstly , Facebook and Twitter can be used when their users are in an unpleasant mood , and in where their negative feelings are expressed .
-A 18 19|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 18 19|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S Secondly , Facebook provides the opportunity to remain in touch with daily activities from friends , making observations of relationships , maintaining one 's own feeling within the network ( through wall posts , pokes , messages , etc ) ( Oldmeadow , Quinn , & Kowert , 2013 ) .
 A 25 26|||R:NOUN:NUM|||feelings|||REQUIRED|||-NONE-|||0
 
 S That is to say , human behaviour on Facebook are interacted we with others by sharing their mood , and receiving responses .
-A 9 10|||R:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
+A 9 10|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 A 10 11|||R:VERB:FORM|||interacting|||REQUIRED|||-NONE-|||0
 A 11 12|||U:PRON||||||REQUIRED|||-NONE-|||0
 
@@ -1320,7 +1318,7 @@ S Thirdly , Facebook can be used as an organizational communication tool in busi
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Knowledge about the members increases continually , and moreover , maintaining relations with other existing members , and also sharing their same interests by the social network . ( Emerald Group Publishing , 2013 ) .
-A 23 24|||R:ADP|||through|||REQUIRED|||-NONE-|||0
+A 23 24|||R:PREP|||through|||REQUIRED|||-NONE-|||0
 
 S Finally , people are allowed to follow anyone who they find enjoyable through Twitter .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -1332,21 +1330,21 @@ S However , due to this , people who are being followed , or users in general , 
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S However , information which is appeared on Facebook or Twitter are easily accessible , therefore everybody can easily response as a public opinion .
-A 4 6|||R:OTHER|||appears|||REQUIRED|||-NONE-|||0
-A 10 11|||R:AUX|||is|||REQUIRED|||-NONE-|||0
+A 4 6|||R:VERB:TENSE|||appears|||REQUIRED|||-NONE-|||0
+A 10 11|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 A 18 19|||R:VERB|||respond|||REQUIRED|||-NONE-|||0
-A 19 20|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 19 20|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S However , information which is appeared on Facebook or Twitter are easily accessible , therefore everybody can easily response as a public opinion .
-A 4 6|||R:OTHER|||appears|||REQUIRED|||-NONE-|||0
-A 10 11|||R:AUX|||is|||REQUIRED|||-NONE-|||0
+A 4 6|||R:VERB:TENSE|||appears|||REQUIRED|||-NONE-|||0
+A 10 11|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 A 18 19|||R:VERB|||respond|||REQUIRED|||-NONE-|||0
-A 19 20|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 19 20|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S Mostly Facebook users expect their friend to respond or pay attention on what they are doing .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 5 6|||R:NOUN:NUM|||friends|||REQUIRED|||-NONE-|||0
-A 11 12|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S In fact , along with agreeable and pleasant comments , there are also small amounts of aggressive and even racist comment .
 A 14 15|||R:NOUN|||numbers|||REQUIRED|||-NONE-|||0
@@ -1363,8 +1361,8 @@ S Because of the accessible information through SMS , it has led to many problem
 A 14 16|||R:OTHER|||involving|||REQUIRED|||-NONE-|||0
 
 S For example , Krishna et al.(2013 ) reports a case of continuous disturbing a woman from a man called Mr .
-A 13 13|||M:ADP|||of|||REQUIRED|||-NONE-|||0
-A 15 16|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 13 13|||M:PREP|||of|||REQUIRED|||-NONE-|||0
+A 15 16|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 
 S X " admitted to a state psychiatric hospital after being found not competent to stand trial on charges of stalking harassment , trespassing and telephone harassment " ( pp . 576.e1 - 576.e2 ) .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -1373,7 +1371,7 @@ S Potentially , Facebook and Twitter , and SMS in general , may replace face to 
 A 14 14|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
 A 15 15|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
 A 34 35|||R:VERB:FORM|||having|||REQUIRED|||-NONE-|||0
-A 39 39|||M:CONTR|||'s|||REQUIRED|||-NONE-|||0
+A 39 39|||M:NOUN:POSS|||'s|||REQUIRED|||-NONE-|||0
 
 S Therefore , it would be easier to be connected and keep in touch with friends within a second , rather than have to call them .
 A 21 22|||R:VERB:FORM|||having|||REQUIRED|||-NONE-|||0
@@ -1395,7 +1393,7 @@ A 23 24|||R:VERB:FORM|||avoiding|||REQUIRED|||-NONE-|||0
 A 25 26|||R:PRON|||them|||REQUIRED|||-NONE-|||0
 
 S In conclusion , the benefits from using Facebook and Twitter is that people can communicate and being connected to their friends frequently .
-A 16 17|||R:VERB:TENSE|||be|||REQUIRED|||-NONE-|||0
+A 16 17|||R:VERB:FORM|||be|||REQUIRED|||-NONE-|||0
 
 S Also people can easily reduce their negative mood by sharing and expressing how they feel .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -1410,7 +1408,7 @@ S Photography classes for everyone Introduction Teenagers are constantly influen
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Photographs are included in all of those sites .
-A 3 4|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 
 S Also , this phenomenon of taking photographs is part of our daily life , because it is the best way to capture special moments like birthdays , travels , special ocassions , etc .
 A 30 31|||R:SPELL|||occasions|||REQUIRED|||-NONE-|||0
@@ -1430,11 +1428,11 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The reasons Recent studies show that in the last twenty years more than 3,000 photographs are taken per person in the world , especially in the latest generations lifes(teenagers and kids ) .
 A 11 11|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 15 16|||R:AUX|||have been|||REQUIRED|||-NONE-|||0
+A 15 16|||R:VERB:TENSE|||have been|||REQUIRED|||-NONE-|||0
 A 28 29|||R:OTHER|||of lives|||REQUIRED|||-NONE-|||0
 
 S This increase is related with the overwhelming development of technologies in computers , cameras , cellphones , etc .
-A 4 5|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 4 5|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S Also , photography is considered as a type of art , so it requires the knowledge of especial skills , techniques and knowledge .
 A 17 18|||R:ADJ|||special|||REQUIRED|||-NONE-|||0
@@ -1448,7 +1446,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S There is an April now and finally spring came .
 A 0 1|||R:PRON|||It|||REQUIRED|||-NONE-|||0
 A 2 3|||U:DET||||||REQUIRED|||-NONE-|||0
-A 8 9|||R:OTHER|||has come|||REQUIRED|||-NONE-|||0
+A 8 9|||R:VERB:TENSE|||has come|||REQUIRED|||-NONE-|||0
 
 S A bright sun is shining , the snow melted away in March .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -1457,7 +1455,7 @@ S The first spring birds came back from the warm countries .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S They are singing funny and building their nests .
-A 1 3|||R:OTHER|||sing|||REQUIRED|||-NONE-|||0
+A 1 3|||R:VERB|||sing|||REQUIRED|||-NONE-|||0
 A 5 6|||R:VERB:FORM|||build|||REQUIRED|||-NONE-|||0
 
 S People look happier .
@@ -1483,7 +1481,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Hockey as a life style Although all sports help you to have a healthy life , hockey provides you more than just being healthy or fit .
 A 3 5|||R:ORTH|||lifestyle|||REQUIRED|||-NONE-|||0
-A 19 19|||M:ADP|||with|||REQUIRED|||-NONE-|||0
+A 19 19|||M:PREP|||with|||REQUIRED|||-NONE-|||0
 
 S What are you thinking of whenever you choose a sport ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -1520,7 +1518,7 @@ A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 S Through all my life I have been willing to improve in this sport and since 2010 it has became a life style to me .
 A 18 19|||R:VERB:FORM|||become|||REQUIRED|||-NONE-|||0
 A 20 22|||R:ORTH|||lifestyle|||REQUIRED|||-NONE-|||0
-A 22 23|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 22 23|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 
 S Why will I recommend this to you ?
 A 1 2|||R:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0
@@ -1535,7 +1533,7 @@ S So stop searching for the right sport , this one is for you !
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S As far as I 'm concerned , public transportation is the best transport media for environmental care .
-A 13 14|||R:MORPH|||medium|||REQUIRED|||-NONE-|||0
+A 13 14|||R:NOUN:NUM|||medium|||REQUIRED|||-NONE-|||0
 
 S In spite of some people make enough money to buy their own car , electric and hybrid cars are more expensive than traditional ones ( the ones who use gas or diesel ) so , people choose this ones and that 's because pollution is several issue that we have to deal with .
 A 5 6|||R:VERB:FORM|||making|||REQUIRED|||-NONE-|||0
@@ -1558,7 +1556,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I think the government will slow down the fee in public transportation , that could make people to use public transportation and caring the environment from CO2 emissions and prevent the global heating .
 A 8 9|||R:NOUN:NUM|||fees|||REQUIRED|||-NONE-|||0
-A 9 10|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 A 12 14|||R:PUNCT|||. That|||REQUIRED|||-NONE-|||0
 A 17 18|||U:VERB:FORM||||||REQUIRED|||-NONE-|||0
 A 22 23|||R:OTHER|||care about|||REQUIRED|||-NONE-|||0
@@ -1584,7 +1582,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S Nevertheness it is never enough , because dog 's owners that they have most of the blame .
 A 0 1|||R:SPELL|||Nevertheless|||REQUIRED|||-NONE-|||0
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 8 9|||U:CONTR||||||REQUIRED|||-NONE-|||0
+A 8 9|||U:NOUN:POSS||||||REQUIRED|||-NONE-|||0
 A 10 12|||U:OTHER||||||REQUIRED|||-NONE-|||0
 
 S Since 2008 , there are many bike paths across the city , so the citizens will be able to avoid the car and they will emit less air pollution .
@@ -1609,7 +1607,7 @@ A 7 8|||R:OTHER|||problem ,|||REQUIRED|||-NONE-|||0
 
 S We usually use the public transport , which has a great quality in the city I live .
 A 3 4|||U:DET||||||REQUIRED|||-NONE-|||0
-A 17 17|||M:ADP|||in|||REQUIRED|||-NONE-|||0
+A 17 17|||M:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S It works perfectly : it is always on time and the price is worth .
 A 14 14|||M:PRON|||it|||REQUIRED|||-NONE-|||0
@@ -1621,7 +1619,7 @@ S Moreover , we run an organization which pays people who bring us the materials
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The benefits are given to several organizations which take of care of the environment .
-A 9 10|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 9 10|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S My sister teaches people what to do with things they want to rid of , such as bottles or papers .
 A 19 20|||R:NOUN:NUM|||paper|||REQUIRED|||-NONE-|||0
@@ -1649,25 +1647,25 @@ S Egypt is a kind of the river civilization among the huge desert Sahara .
 A 5 6|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S All over the time the Nile is the only source of water for Egyptians .
-A 1 2|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 1 2|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Furthermore , elevation of the water level on the river helps people to realize the possibility of expanding the area of fertile lands .
 A 2 2|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S The Egyptians called their country ' Black Land ' to mark it off of the red soil of desert .
-A 13 14|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 13 14|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 A 18 18|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S Nowadays , deep and wide valley of the Nile became the most important transport line for Egypt .
 A 2 2|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 9 10|||R:OTHER|||has become|||REQUIRED|||-NONE-|||0
+A 9 10|||R:VERB:TENSE|||has become|||REQUIRED|||-NONE-|||0
 
 S Through the centuries people have been exploring the nature of the Nile .
 A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S The ancient Egyptians divided the year for three seasons compared to dry or wet period .
-A 6 7|||R:ADP|||into|||REQUIRED|||-NONE-|||0
+A 6 7|||R:PREP|||into|||REQUIRED|||-NONE-|||0
 
 S They knew when it will be the ' Green Nile ' or ' Red Nile ' to stock up with clean water .
 A 4 5|||R:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0
@@ -1688,9 +1686,9 @@ A 18 20|||R:WO|||can hardly|||REQUIRED|||-NONE-|||0
 A 21 22|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S But I hope , as soon as Egypt become developing the government will pay attention to the ecological problems that high level .
-A 8 9|||R:VERB:SVA|||becomes|||REQUIRED|||-NONE-|||0
+A 8 9|||R:MORPH|||becomes|||REQUIRED|||-NONE-|||0
 A 10 10|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 19 19|||M:ADP|||at|||REQUIRED|||-NONE-|||0
+A 19 19|||M:PREP|||at|||REQUIRED|||-NONE-|||0
 
 S When most people think about an important historical place in Italy , they think of Duomo , in Milano .
 A 15 15|||M:DET|||the|||REQUIRED|||-NONE-|||0
@@ -1706,7 +1704,7 @@ A 2 2|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 4 5|||R:VERB:TENSE|||has|||REQUIRED|||-NONE-|||0
 
 S It quite ancient , but still fascinating for thousand of tourists , who come every year .
-A 1 1|||M:AUX|||is|||REQUIRED|||-NONE-|||0
+A 1 1|||M:VERB|||is|||REQUIRED|||-NONE-|||0
 A 8 8|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 8 9|||R:MORPH|||thousands|||REQUIRED|||-NONE-|||0
 A 11 12|||U:PUNCT||||||REQUIRED|||-NONE-|||0
@@ -1722,8 +1720,8 @@ A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 9 9|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S It is ruined through the ages , but now people understand his importance and take care of it .
-A 1 2|||R:AUX|||has been|||REQUIRED|||-NONE-|||0
-A 11 12|||R:PRON|||its|||REQUIRED|||-NONE-|||0
+A 1 2|||R:VERB:TENSE|||has been|||REQUIRED|||-NONE-|||0
+A 11 12|||R:DET|||its|||REQUIRED|||-NONE-|||0
 
 S In my opinion it is important because it remembers our past and our traditions , which we should n't forget .
 A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -1748,10 +1746,10 @@ S There is no point in saying public transport has no future .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Travelling through car is a convenient mode of transport , but most of the population can not afford it .
-A 1 2|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 1 2|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 
 S There are advantages and disadvantages in using a public transport .
-A 5 6|||R:SCONJ|||to|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 A 7 8|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S Firstly to discuss the benefits of public transport it is cheap and affordable for all class of people in society .
@@ -1770,7 +1768,7 @@ A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 7 8|||R:NOUN:NUM|||advantages|||REQUIRED|||-NONE-|||0
 
 S Everybody can not afford a travel through car as it is costly , but to discuss the benefits , one can enjoy high privacy during travel and is convenient and sophisticated and can travel faster .
-A 6 7|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 6 7|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 A 27 27|||M:PRON|||it|||REQUIRED|||-NONE-|||0
 
 S To sum up with it is not appropriate to say that there is no future for public transport because both has equal advantage and disadvantages .
@@ -1800,13 +1798,13 @@ S Moreover , I think that provide the seat to elders is also a problem .
 A 5 6|||R:VERB:FORM|||providing|||REQUIRED|||-NONE-|||0
 A 6 7|||U:DET||||||REQUIRED|||-NONE-|||0
 A 7 8|||R:NOUN:NUM|||seats|||REQUIRED|||-NONE-|||0
-A 8 9|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 8 9|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 A 9 9|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 9 10|||R:MORPH|||elderly|||REQUIRED|||-NONE-|||0
 
 S Priority seats , are preserved to those who need , not only elders but also some adult need it .
 A 2 3|||U:PUNCT||||||REQUIRED|||-NONE-|||0
-A 5 6|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 A 9 9|||M:PRON|||them|||REQUIRED|||-NONE-|||0
 A 12 12|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 12 13|||R:MORPH|||elderly|||REQUIRED|||-NONE-|||0
@@ -1815,7 +1813,8 @@ A 17 19|||U:OTHER||||||REQUIRED|||-NONE-|||0
 
 S Somehow , not all of them can you identify whether their bodies feel uncomfortable merely from their appearance , which lead to Some misunderstanding between them .
 A 7 8|||U:PRON||||||REQUIRED|||-NONE-|||0
-A 15 16|||R:ADP|||because of|||REQUIRED|||-NONE-|||0
+A 15 15|||M:PREP|||because|||REQUIRED|||-NONE-|||0
+A 15 16|||R:PREP|||of|||REQUIRED|||-NONE-|||0
 A 20 21|||R:VERB:SVA|||leads|||REQUIRED|||-NONE-|||0
 A 22 23|||R:ORTH|||some|||REQUIRED|||-NONE-|||0
 A 23 24|||R:NOUN:NUM|||misunderstandings|||REQUIRED|||-NONE-|||0
@@ -1836,7 +1835,7 @@ A 13 15|||R:OTHER|||except|||REQUIRED|||-NONE-|||0
 
 S Everyone should develop the awareness of public manner .
 A 3 4|||R:DET|||an|||REQUIRED|||-NONE-|||0
-A 7 8|||R:MORPH|||manners|||REQUIRED|||-NONE-|||0
+A 7 8|||R:NOUN:NUM|||manners|||REQUIRED|||-NONE-|||0
 
 S Television is an important part of modern culture .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -1883,19 +1882,19 @@ S I deal with consulting and sales of financial products and services to an inte
 A 24 25|||R:NOUN:NUM|||businesses|||REQUIRED|||-NONE-|||0
 
 S I follow the relationship with customers from acquisition to the advise until the realization of contracts , building and maintaining relationships after - sales in the aim of customer satisfaction I also worked with large and small teams in back - offices , managed many administrative activities related to mortages , personal loans , contability and investments too .
-A 10 11|||R:NOUN:NUM|||advice|||REQUIRED|||-NONE-|||0
-A 24 25|||R:ADP|||with|||REQUIRED|||-NONE-|||0
+A 10 11|||R:MORPH|||advice|||REQUIRED|||-NONE-|||0
+A 24 25|||R:PREP|||with|||REQUIRED|||-NONE-|||0
 A 30 30|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 49 50|||R:NOUN:INFL|||mortage|||REQUIRED|||-NONE-|||0
+A 49 50|||R:MORPH|||mortage|||REQUIRED|||-NONE-|||0
 
 S I worked for several years to the acquisition of new customers , to provide them with a complete service , from the account to insurance products , investment products , personal loans , revolving credit , and cross - selling products .
-A 5 6|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S In many years of work I have honed my skills in managing non - standard situations , analyzing the problem , finding and implementing practical and easy solutions . non - standard situations , analyzing the problem , finding and implementing practical and easy solutions .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I have faced several situations always work with serenity and enthusiasm , I like to work in a multicultural and dynamic .
-A 5 5|||M:CCONJ|||and|||REQUIRED|||-NONE-|||0
+A 5 5|||M:CONJ|||and|||REQUIRED|||-NONE-|||0
 A 11 12|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 21 21|||M:NOUN|||area|||REQUIRED|||-NONE-|||0
 
@@ -1903,7 +1902,7 @@ S I 'm careful to meet the goals of the team in which I work , cooperating with 
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I work for the same large company for 25 years , now is the time to change and find new job opportunities .
-A 1 2|||R:OTHER|||have been working|||REQUIRED|||-NONE-|||0
+A 1 2|||R:VERB:TENSE|||have been working|||REQUIRED|||-NONE-|||0
 A 10 12|||R:PUNCT|||. Now|||REQUIRED|||-NONE-|||0
 
 S Needs to work my husband has been living in Zaandam , I want to find a new job in Holland to rejoin our family .
@@ -1924,7 +1923,7 @@ A 27 28|||U:PUNCT||||||REQUIRED|||-NONE-|||0
 S When we see all this cars in our yards , when we stay in traffic jam , we think that one day we will have to live our car and use public transport .
 A 4 5|||R:DET|||these|||REQUIRED|||-NONE-|||0
 A 15 16|||R:NOUN:NUM|||jams|||REQUIRED|||-NONE-|||0
-A 27 27|||M:ADP|||in|||REQUIRED|||-NONE-|||0
+A 27 27|||M:PREP|||in|||REQUIRED|||-NONE-|||0
 A 28 29|||R:NOUN:NUM|||cars|||REQUIRED|||-NONE-|||0
 
 S If we do n't do it , one day we 'll wake up in the immortal traffic jam .
@@ -1956,21 +1955,21 @@ A 3 4|||U:PUNCT||||||REQUIRED|||-NONE-|||0
 
 S But another of people think that it is not so bad idea , because they will be able to drink in spite of the fact , that they are drivers at the moment .
 A 1 2|||R:DET|||other|||REQUIRED|||-NONE-|||0
-A 2 3|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 2 3|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 9 10|||R:OTHER|||a|||REQUIRED|||-NONE-|||0
 A 25 26|||U:PUNCT||||||REQUIRED|||-NONE-|||0
 
 S However , there will always be people who dislike to be a driver anyway .
-A 9 11|||R:OTHER|||being|||REQUIRED|||-NONE-|||0
+A 9 11|||R:VERB:FORM|||being|||REQUIRED|||-NONE-|||0
 A 12 13|||R:NOUN:NUM|||drivers|||REQUIRED|||-NONE-|||0
 
 S And people who hate public transport , there will always be .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The question is , which sort of people have more impact in the world , and , finally , who will decide .
-A 7 8|||R:NOUN:NUM|||person|||REQUIRED|||-NONE-|||0
+A 7 8|||R:NOUN|||person|||REQUIRED|||-NONE-|||0
 A 8 9|||R:VERB:SVA|||has|||REQUIRED|||-NONE-|||0
-A 11 12|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 22 23|||R:PUNCT|||?|||REQUIRED|||-NONE-|||0
 
 S How many language do you speak ?
@@ -1997,25 +1996,24 @@ A 28 28|||M:ADV|||more|||REQUIRED|||-NONE-|||0
 
 S Second , for finding a good job opportunity , the business exchange is increasing in the intrenational level , if you speak a foreign language , certainly it adds some value on your profile and you can get a higher salary .
 A 9 10|||U:DET||||||REQUIRED|||-NONE-|||0
-A 14 15|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 14 15|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 16 17|||R:SPELL|||international|||REQUIRED|||-NONE-|||0
 A 18 20|||R:PUNCT|||. If|||REQUIRED|||-NONE-|||0
-A 31 32|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 31 32|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S Third , through learning a foreign language , you do n't only learn a language , at the time you are also getting know its culture , get to know a different culture and society different than yours 's , it enriches your knowledge .
 A 23 23|||M:VERB:FORM|||to|||REQUIRED|||-NONE-|||0
 A 27 28|||R:VERB:FORM|||getting|||REQUIRED|||-NONE-|||0
-A 37 38|||R:PRON|||you|||REQUIRED|||-NONE-|||0
-A 38 39|||U:CONTR||||||REQUIRED|||-NONE-|||0
+A 37 39|||R:OTHER|||you|||REQUIRED|||-NONE-|||0
 A 39 41|||R:PUNCT|||. It|||REQUIRED|||-NONE-|||0
 
 S Over these years , there are more and more miserable accidents happened around the world .
 A 1 2|||R:DET|||the|||REQUIRED|||-NONE-|||0
-A 5 6|||R:OTHER|||have been|||REQUIRED|||-NONE-|||0
+A 5 6|||R:VERB:TENSE|||have been|||REQUIRED|||-NONE-|||0
 A 11 12|||R:VERB:FORM|||happening|||REQUIRED|||-NONE-|||0
 
 S From newspapers , magazines , even foreign medium , we can easily figure out that our environment is changing severely .
-A 7 8|||R:MORPH|||media|||REQUIRED|||-NONE-|||0
+A 7 8|||R:NOUN:NUM|||media|||REQUIRED|||-NONE-|||0
 
 S Many scientists infer that people 's lives will change dramatically in the next 50 years because of humans ' greedy .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2034,7 +2032,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The higher temperature enhance , the worst the living quality is .
 A 2 2|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 3 4|||U:VERB||||||REQUIRED|||-NONE-|||0
+A 3 4|||U:NOUN||||||REQUIRED|||-NONE-|||0
 A 6 7|||R:ADJ:FORM|||worse|||REQUIRED|||-NONE-|||0
 
 S If people around the world could n't put more emphasis on our living places , we must have a dark and hopeless future .
@@ -2067,7 +2065,7 @@ S The undercovered work is very hard , not just because you will work with dange
 A 18 19|||R:MORPH|||real|||REQUIRED|||-NONE-|||0
 
 S When people know that they were deceived , that they trust were broken , heads will roll .
-A 9 10|||R:PRON|||their|||REQUIRED|||-NONE-|||0
+A 9 10|||R:DET|||their|||REQUIRED|||-NONE-|||0
 A 11 12|||R:VERB:SVA|||was|||REQUIRED|||-NONE-|||0
 
 S You have to be precise , fast , and a really good actor .
@@ -2089,21 +2087,21 @@ S For the last two years I have joined the swimming group at the University .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I managed to succeeded in many competitions in the country and abroad .
-A 3 4|||R:MORPH|||succeed|||REQUIRED|||-NONE-|||0
+A 3 4|||R:VERB:FORM|||succeed|||REQUIRED|||-NONE-|||0
 
 S I believe I am a suitable candidate for this post , considering the swimming skills I have .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S On the other hand I completed the first aid course , in the Red Cross .
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 11 12|||R:ADP|||with|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PREP|||with|||REQUIRED|||-NONE-|||0
 
 S The job would give me the opportunity to use all the experience I have gained and what is more
 A 16 16|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 19 19|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S It would provide me new knowledge .
-A 4 4|||M:ADP|||with|||REQUIRED|||-NONE-|||0
+A 4 4|||M:PREP|||with|||REQUIRED|||-NONE-|||0
 
 S Please do not hesitate to contact me if you should require further information .
 A 9 10|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
@@ -2115,10 +2113,10 @@ S I look forward to hearing from you Yours faithfully , Sebastián Hernández
 A 7 7|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S In our modern world , many people are suffered from stress that spring from life conditions .
-A 7 9|||R:OTHER|||suffer|||REQUIRED|||-NONE-|||0
+A 7 9|||R:VERB:TENSE|||suffer|||REQUIRED|||-NONE-|||0
 
 S In addition to this , people are working in very stressful workplaces and they want to leave from this condition in holidays .
-A 6 8|||R:OTHER|||work|||REQUIRED|||-NONE-|||0
+A 6 8|||R:VERB:TENSE|||work|||REQUIRED|||-NONE-|||0
 A 21 21|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S Therefore , it can be said that holidays are the best option to renew the soul and revive the spirit for people .
@@ -2128,19 +2126,19 @@ S In holidays , people can away from daily problems and also can take more time 
 A 1 1|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S In this respect , many people prefer to go natural places with their families in order to forget about bad situations on their lives .
-A 9 9|||M:ADP|||to|||REQUIRED|||-NONE-|||0
-A 21 22|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 9 9|||M:PREP|||to|||REQUIRED|||-NONE-|||0
+A 21 22|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S For example , walking in the seaside or swimming in the sea can be helpful to forget hard life conditions .
-A 4 5|||R:ADP|||along|||REQUIRED|||-NONE-|||0
+A 4 5|||R:PREP|||along|||REQUIRED|||-NONE-|||0
 
 S On the one hand , holidays are the best for people in terms of thinking clearly their experinces about life .
-A 16 16|||M:ADP|||about|||REQUIRED|||-NONE-|||0
+A 16 16|||M:PREP|||about|||REQUIRED|||-NONE-|||0
 A 17 18|||R:SPELL|||experiences|||REQUIRED|||-NONE-|||0
-A 18 19|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 18 19|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S People can review their decisions in holidays more accurate and helpful .
-A 5 6|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 7 7|||M:OTHER|||in a|||REQUIRED|||-NONE-|||0
 A 11 11|||M:NOUN|||way|||REQUIRED|||-NONE-|||0
 
@@ -2152,18 +2150,18 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The reason is that people must complate their tasks in order to gain more money to maintain their lives and they forget about these emotional feelings such as love , helping people or thinking spiritual things .
 A 6 7|||R:SPELL|||complete|||REQUIRED|||-NONE-|||0
-A 34 34|||M:ADP|||about|||REQUIRED|||-NONE-|||0
+A 34 34|||M:PREP|||about|||REQUIRED|||-NONE-|||0
 
 S It can be clearly seen that in holidays people are getting closer and they remember their feelings .
 A 7 7|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 9 11|||R:OTHER|||get|||REQUIRED|||-NONE-|||0
+A 9 11|||R:VERB:TENSE|||get|||REQUIRED|||-NONE-|||0
 
 S For example , people meet their relatives that never see for a long time .
 A 8 8|||M:OTHER|||they have|||REQUIRED|||-NONE-|||0
 A 9 10|||R:VERB:FORM|||seen|||REQUIRED|||-NONE-|||0
 
 S At the same time , people have a chance to go sacred places in order to renew their spirits and souls .
-A 11 11|||M:ADP|||to|||REQUIRED|||-NONE-|||0
+A 11 11|||M:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S They can pray for God and it gives a relief for people .
 A 8 9|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -2185,8 +2183,8 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Also holidays are very helpful days in order to revive the spirit and the soul because people have a chance to move away modern life that has full of material subjects .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 23 23|||M:ADP|||from|||REQUIRED|||-NONE-|||0
-A 26 27|||R:OTHER|||is|||REQUIRED|||-NONE-|||0
+A 23 23|||M:PREP|||from|||REQUIRED|||-NONE-|||0
+A 26 27|||R:VERB|||is|||REQUIRED|||-NONE-|||0
 
 S Cycling to school , to work or to do any other activity it is not a common habit in Spain .
 A 12 13|||U:PRON||||||REQUIRED|||-NONE-|||0
@@ -2196,7 +2194,7 @@ A 11 11|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 30 31|||R:NOUN|||means|||REQUIRED|||-NONE-|||0
 
 S On the one hand , there are many benefits of cycling .
-A 9 10|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S Firstly , it reduces traffic jams , noise and pollution , as well as it lowers CO2 emissions .
 A 14 15|||U:PRON||||||REQUIRED|||-NONE-|||0
@@ -2206,7 +2204,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S On the other hand , there are some issues such as the increase of danger on the roads .
 A 9 9|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 13 14|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 13 14|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S Statistically cycling is generally considered to be more dangerous than travelling by car .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -2235,7 +2233,7 @@ A 14 14|||M:DET|||a|||REQUIRED|||-NONE-|||0
 
 S Also , we can drive a car to any place where the public transport perhaps is not able not reach .
 A 11 12|||U:DET||||||REQUIRED|||-NONE-|||0
-A 18 19|||R:PART|||to|||REQUIRED|||-NONE-|||0
+A 18 19|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
 
 S When the bus is crowded , we have to stand , making us more exhausting especially for a long distance .
 A 14 15|||R:OTHER|||exhausted ,|||REQUIRED|||-NONE-|||0
@@ -2248,13 +2246,13 @@ A 12 13|||R:NOUN:NUM|||cars|||REQUIRED|||-NONE-|||0
 
 S As we all know , the more public transport passengers use , the less car exhausts are emitted per person .
 A 15 16|||R:NOUN:NUM|||exhaust|||REQUIRED|||-NONE-|||0
-A 16 17|||R:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
+A 16 17|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 
 S Recently , several studies have shown evidences that there is a strong relation between car exhausts and lung cancers .
 A 6 7|||R:NOUN:NUM|||evidence|||REQUIRED|||-NONE-|||0
 
 S In other words , public transport plays an important role in protecting human beings from suffering of diseases and saving life .
-A 16 17|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 16 17|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 20 21|||R:NOUN:NUM|||lives|||REQUIRED|||-NONE-|||0
 
 S Second , public transport saves city spaces .
@@ -2264,7 +2262,7 @@ S As more and more people choose to live in cities , nowadays our cities become 
 A 14 14|||M:VERB:TENSE|||have|||REQUIRED|||-NONE-|||0
 
 S Correspondingly , the space for each person becomes more limited than before .
-A 7 8|||R:OTHER|||has become|||REQUIRED|||-NONE-|||0
+A 7 8|||R:VERB:TENSE|||has become|||REQUIRED|||-NONE-|||0
 
 S Provided that every citizen owns a car and use it rather than public transport for every travelling chance , I suppose that our streets would become a parking place and everyone would spend more time in congesting .
 A 8 9|||R:VERB:SVA|||uses|||REQUIRED|||-NONE-|||0
@@ -2274,10 +2272,10 @@ A 35 37|||R:OTHER|||congested|||REQUIRED|||-NONE-|||0
 
 S Last but not the least , public transport allows people to do other things which is impossible when driving .
 A 3 4|||U:DET||||||REQUIRED|||-NONE-|||0
-A 15 16|||R:AUX|||are|||REQUIRED|||-NONE-|||0
+A 15 16|||R:VERB:SVA|||are|||REQUIRED|||-NONE-|||0
 
 S The drivers have to continuously pay attention to surroundings , resulting in a tense spirit .
-A 8 8|||M:PRON|||their|||REQUIRED|||-NONE-|||0
+A 8 8|||M:DET|||their|||REQUIRED|||-NONE-|||0
 
 S For a passenger , however , travelling is a complete relax .
 A 10 11|||R:MORPH|||relaxation|||REQUIRED|||-NONE-|||0
@@ -2339,13 +2337,13 @@ A 19 19|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
 S I worked in an Easter camp too and I have already prepared lot of ativities , like " rappel " , paintball ...
 A 12 12|||M:DET|||a|||REQUIRED|||-NONE-|||0
 A 14 15|||R:SPELL|||activities|||REQUIRED|||-NONE-|||0
-A 18 19|||R:MORPH|||rappelling|||REQUIRED|||-NONE-|||0
+A 18 19|||R:VERB:FORM|||rappelling|||REQUIRED|||-NONE-|||0
 
 S That is for these reasons I think I have the skills for the job .
-A 0 1|||U:PRON||||||REQUIRED|||-NONE-|||0
+A 0 1|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S I can be contacted for a meeting in the above address .
-A 7 8|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 7 8|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 
 S I hope you considerate me for the job , rodrigo Today , I went to my Winnie 's home with Adriana in the afternoon .
 A 3 4|||R:MORPH|||consider|||REQUIRED|||-NONE-|||0
@@ -2437,10 +2435,10 @@ S Inside will be full of conveniences .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Big spaces will be divided in a few zones .
-A 5 6|||R:ADP|||into|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||into|||REQUIRED|||-NONE-|||0
 
 S Relaxation 's , learning 's , kitchen 's zones and so on .
-A 7 8|||U:CONTR||||||REQUIRED|||-NONE-|||0
+A 7 8|||U:NOUN:POSS||||||REQUIRED|||-NONE-|||0
 
 S In house of the future there will be automatic curtains reacting to the light in every house .
 A 1 2|||R:NOUN:NUM|||houses|||REQUIRED|||-NONE-|||0
@@ -2454,7 +2452,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Thanks to that it can expand or reduced .
 A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 5 6|||R:OTHER|||be expanded|||REQUIRED|||-NONE-|||0
+A 5 6|||R:VERB:TENSE|||be expanded|||REQUIRED|||-NONE-|||0
 
 S Everything depends on the number of people .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2483,10 +2481,10 @@ A 20 22|||R:PUNCT|||. It|||REQUIRED|||-NONE-|||0
 A 28 29|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S If you will start to learn swimming , choose a place that has an experienced coach , and try to be part of a group of your age .
-A 2 3|||R:OTHER|||want to|||REQUIRED|||-NONE-|||0
+A 2 3|||R:VERB|||want to|||REQUIRED|||-NONE-|||0
 
 S Hello Paul , I enjoyed helping at the concert which was in Antaya on October .
-A 13 14|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 13 14|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S I had a great time with people who are working as a helper for the concert .
 A 8 9|||R:VERB:TENSE|||were|||REQUIRED|||-NONE-|||0
@@ -2497,12 +2495,12 @@ S I got a lot of experience from them .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S In the concert time all people can enjoy but nobody think about how they are preparing to concert .
-A 0 1|||R:ADP|||At|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||At|||REQUIRED|||-NONE-|||0
 A 4 5|||R:OTHER|||,|||REQUIRED|||-NONE-|||0
-A 5 6|||R:PRON|||everyone|||REQUIRED|||-NONE-|||0
+A 5 6|||R:NOUN|||everyone|||REQUIRED|||-NONE-|||0
 A 8 8|||M:OTHER|||it ,|||REQUIRED|||-NONE-|||0
 A 10 11|||R:VERB:SVA|||thinks|||REQUIRED|||-NONE-|||0
-A 16 17|||R:OTHER|||for|||REQUIRED|||-NONE-|||0
+A 16 17|||R:PART|||for|||REQUIRED|||-NONE-|||0
 A 17 17|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S I saw so many interesting things during the preparetion time .
@@ -2512,21 +2510,21 @@ S For example they know everything about each helper 's jobs but on the same tim
 A 2 2|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 9 10|||R:NOUN:NUM|||job|||REQUIRED|||-NONE-|||0
 A 10 10|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 11 12|||R:ADP|||at|||REQUIRED|||-NONE-|||0
-A 16 16|||M:AUX|||are|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PREP|||at|||REQUIRED|||-NONE-|||0
+A 16 16|||M:VERB|||are|||REQUIRED|||-NONE-|||0
 A 17 18|||R:MORPH|||concerned|||REQUIRED|||-NONE-|||0
 A 18 18|||M:OTHER|||with their|||REQUIRED|||-NONE-|||0
 
 S I want explain to you some interesting part from my experience .
 A 2 2|||M:VERB:FORM|||to|||REQUIRED|||-NONE-|||0
 A 7 8|||R:NOUN:NUM|||parts|||REQUIRED|||-NONE-|||0
-A 8 9|||R:ADP|||of|||REQUIRED|||-NONE-|||0
+A 8 9|||R:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S In the concert morning were excited and thinking about the concert and we decided do not think about the concert just do your job which would be given .
-A 0 1|||R:ADP|||At|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||At|||REQUIRED|||-NONE-|||0
 A 4 4|||M:PRON|||we|||REQUIRED|||-NONE-|||0
 A 20 20|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 22 23|||R:PRON|||our|||REQUIRED|||-NONE-|||0
+A 22 23|||R:DET|||our|||REQUIRED|||-NONE-|||0
 
 S When we were arranging concert plan we made work sharing for all of us .
 A 4 4|||M:DET|||the|||REQUIRED|||-NONE-|||0
@@ -2535,7 +2533,7 @@ A 5 6|||R:NOUN:NUM|||plans|||REQUIRED|||-NONE-|||0
 S Some of them started design the stage , some of them checking songs volume and lights .
 A 4 5|||R:VERB:FORM|||designing|||REQUIRED|||-NONE-|||0
 A 11 12|||R:VERB:FORM|||checked|||REQUIRED|||-NONE-|||0
-A 13 13|||M:PART|||'|||REQUIRED|||-NONE-|||0
+A 13 13|||M:NOUN:POSS|||'|||REQUIRED|||-NONE-|||0
 
 S My job was checking songs list which singers would perform .
 A 4 4|||M:DET|||the|||REQUIRED|||-NONE-|||0
@@ -2548,7 +2546,7 @@ A 1 2|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
 A 9 10|||R:VERB:SVA|||were|||REQUIRED|||-NONE-|||0
 
 S On the concert time I was really worried that something would appear suddenly .
-A 0 1|||R:ADP|||At|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||At|||REQUIRED|||-NONE-|||0
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Actually everybody can be worried because they gave time and effort for it .
@@ -2589,7 +2587,7 @@ A 12 13|||R:SPELL|||positive|||REQUIRED|||-NONE-|||0
 
 S From black - and - white adds posted in public places we have moved to practically live surrounded by outdoor adds placed in every available and imaginable spot .
 A 11 11|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 16 17|||R:OTHER|||living|||REQUIRED|||-NONE-|||0
+A 16 17|||R:VERB:FORM|||living|||REQUIRED|||-NONE-|||0
 
 S From buildings with enormous and bright screens to interactive bus stop signs .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2599,8 +2597,8 @@ A 6 7|||R:VERB:SVA|||allow|||REQUIRED|||-NONE-|||0
 
 S I''m sure that in the very near future , if I have been looking for restaurants in Mallorca in my computer or mobile at home , in my way to work the adds on the buses i will see - which of course will be screens and not printed paper - will show images of Mallorca , or an add from tripadvisor with Mallorca in it .
 A 11 12|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
-A 18 19|||R:ADP|||on|||REQUIRED|||-NONE-|||0
-A 26 27|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 18 19|||R:PREP|||on|||REQUIRED|||-NONE-|||0
+A 26 27|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 31 31|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 36 37|||R:ORTH|||I|||REQUIRED|||-NONE-|||0
 A 41 41|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -2615,14 +2613,14 @@ S The way it feels aggresive to enter a square or plaza in my town and find it f
 A 4 5|||R:SPELL|||aggressive|||REQUIRED|||-NONE-|||0
 
 S Advertisement might be considered an art , or at least some pieces are really artistic , but placed on the wrong spot or showed at the wrong time they loose they artistic side .
-A 18 19|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 18 19|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 A 23 24|||R:VERB:FORM|||shown|||REQUIRED|||-NONE-|||0
 A 28 28|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 29 30|||R:MORPH|||lose|||REQUIRED|||-NONE-|||0
-A 30 31|||R:PRON|||their|||REQUIRED|||-NONE-|||0
+A 29 30|||R:VERB|||lose|||REQUIRED|||-NONE-|||0
+A 30 31|||R:DET|||their|||REQUIRED|||-NONE-|||0
 
 S But , technology is hre for best or worst , and we have to learn to deal with it the best we can .
-A 4 5|||U:OTHER||||||REQUIRED|||-NONE-|||0
+A 4 5|||U:ADJ||||||REQUIRED|||-NONE-|||0
 
 S If I could change one thing in my life , I would like to change my house .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2638,7 +2636,7 @@ A 11 11|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 12 13|||R:SPELL|||style|||REQUIRED|||-NONE-|||0
 
 S I would build there fitness gym , wardrobe -room , swimming pool .
-A 3 4|||R:PRON|||their|||REQUIRED|||-NONE-|||0
+A 3 4|||R:SPELL|||their|||REQUIRED|||-NONE-|||0
 
 S If I had such house , I would like to equip a barbecue area in my garden .
 A 4 4|||M:DET|||a|||REQUIRED|||-NONE-|||0
@@ -2654,13 +2652,13 @@ S When it comes to my favorite sport , tennis will always be my answer .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Though I am a beginner of it , I think it 's interesting since it requires a lot of skills to be a master of it , which sounds very challenging .
-A 5 6|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 
 S When I feel stressed off , I always play tennis to release my pressure .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S If you are a beginner of tennis , my advice is that you need to get a suitable rocket for you first .
-A 5 6|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 
 S As the proverb goes :
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2676,7 +2674,7 @@ A 15 16|||R:MORPH|||techniques|||REQUIRED|||-NONE-|||0
 A 25 26|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S Finally , finding a good teacher is is also critical .
-A 6 7|||U:AUX||||||REQUIRED|||-NONE-|||0
+A 6 7|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
 
 S A skilled coach can teach you the best skills of tennis .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2685,7 +2683,7 @@ S Do we have better television than a few decades ago ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Do we have enough choices in the screen ?
-A 5 6|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 
 S Can you imagine having only two channels and not playing the whole day ?
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2695,7 +2693,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S An explosion of channels arrived to our houses in the eighties .
 A 4 5|||R:VERB|||came|||REQUIRED|||-NONE-|||0
-A 5 6|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 
 S In this report we will see some characteristics of today 's television .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2703,7 +2701,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S Number of Channels are gradually reducing
 A 0 1|||M:DET|||The number|||REQUIRED|||-NONE-|||0
 A 2 3|||R:ORTH|||channels|||REQUIRED|||-NONE-|||0
-A 3 4|||R:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
+A 3 4|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 
 S In our country one decade ago when digital TV arrived , a lot of new channels flourished .
 A 6 6|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -2731,7 +2729,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S They have to reduce their budget Despite of changing channels we see the same news .
 A 6 6|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 7 8|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 7 8|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 10 10|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Big Broadcast groups are used by all of them .
@@ -2759,7 +2757,7 @@ S However the fact is that there is a countdown on them .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Dear Mrs Hopkins , I have seen your advertisement in the newspaper and I am writing to express an interest to join your small group on a trip around the world .
-A 20 21|||R:OTHER|||in|||REQUIRED|||-NONE-|||0
+A 20 21|||R:PART|||in|||REQUIRED|||-NONE-|||0
 A 21 22|||R:VERB:FORM|||joining|||REQUIRED|||-NONE-|||0
 
 S I am a 20-year - old student from Switzerland speaking German , French and English and I am keen on travelling .
@@ -2767,7 +2765,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S With several trips to many countries I have made until now , I would say that I have already some experience in travelling around the word .
 A 18 19|||U:ADV||||||REQUIRED|||-NONE-|||0
-A 21 22|||R:SCONJ|||of|||REQUIRED|||-NONE-|||0
+A 21 22|||R:PREP|||of|||REQUIRED|||-NONE-|||0
 A 25 26|||R:NOUN|||world|||REQUIRED|||-NONE-|||0
 
 S I am interested in to join your group , because I like meeting new people from other countries and I would like to explore new countries around the world .
@@ -2791,11 +2789,11 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S Basically my idea is to use this trip to learn as much as possible , I mean , not only the English language but also to know more about your culture and visit nice places of your country as well .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 14 15|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 35 36|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 35 36|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S As I told you before I ca n't afford to pay this trip alone , so my father will put up some money to help me .
 A 5 5|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 11 11|||M:ADP|||for|||REQUIRED|||-NONE-|||0
+A 11 11|||M:PREP|||for|||REQUIRED|||-NONE-|||0
 
 S But I wanna find a job to help him with the bills .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2825,7 +2823,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S When you get there take the bus which has number 111 .
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 8 9|||R:OTHER|||is|||REQUIRED|||-NONE-|||0
+A 8 9|||R:VERB|||is|||REQUIRED|||-NONE-|||0
 
 S Then ride to the bus stop " Zličín " .
 A 1 2|||R:OTHER|||we rode|||REQUIRED|||-NONE-|||0
@@ -2865,7 +2863,7 @@ S Firstly , we can discuss type of food we want to eat .
 A 5 5|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S Actually , students eat a lot fast food while they are studying at university , because they do n't have time to do food , for these reasons I think that the best restaurant is somowhere when they do home - made food , and a good idea is for mains course : baked potatoes , steamed vegetables and for dessert apple cake .
-A 6 6|||M:ADP|||of|||REQUIRED|||-NONE-|||0
+A 6 6|||M:PREP|||of|||REQUIRED|||-NONE-|||0
 A 22 23|||R:VERB|||eat|||REQUIRED|||-NONE-|||0
 A 24 26|||R:PUNCT|||. For|||REQUIRED|||-NONE-|||0
 A 28 28|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -2881,7 +2879,7 @@ A 45 45|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S In conclusion , I think that this type of food and atmosphere is very for us , because normally we had spoken about book , work and studies , while with this type of environment we can speak about us , our family , our hobbies and all people get to know new something about other mates .
 A 14 14|||M:ADJ|||good|||REQUIRED|||-NONE-|||0
-A 20 22|||R:OTHER|||speak|||REQUIRED|||-NONE-|||0
+A 20 22|||R:VERB:TENSE|||speak|||REQUIRED|||-NONE-|||0
 A 23 24|||R:NOUN:NUM|||books|||REQUIRED|||-NONE-|||0
 
 S I would like to go to Foster 's Hollywood .
@@ -2906,13 +2904,13 @@ S I can not say how they are because you have to taste them .
 A 4 5|||R:OTHER|||what|||REQUIRED|||-NONE-|||0
 
 S It is a flavour similar to stay in the heaven or in the paradise .
-A 6 7|||R:OTHER|||being|||REQUIRED|||-NONE-|||0
+A 6 7|||R:VERB|||being|||REQUIRED|||-NONE-|||0
 A 8 9|||U:DET||||||REQUIRED|||-NONE-|||0
 A 12 13|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S I recommend you to go to this restaurant and you definitely leave with a very good flavour in your mouth and a huge smile in your face .
 A 10 10|||M:VERB:TENSE|||will|||REQUIRED|||-NONE-|||0
-A 24 25|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 24 25|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 
 S You will want to come another time .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -2961,14 +2959,14 @@ S So , I believe either we will have public transport or people are going to be 
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Public transport is even good for our environment rather than cars .
-A 4 5|||R:ADJ:FORM|||better|||REQUIRED|||-NONE-|||0
+A 4 5|||R:ADJ|||better|||REQUIRED|||-NONE-|||0
 A 8 9|||U:ADV||||||REQUIRED|||-NONE-|||0
 
 S Nowadays people have different views about reading books and watching movies .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S Some of them think that books are more interesting than them film versions .
-A 10 11|||R:PRON|||their|||REQUIRED|||-NONE-|||0
+A 10 11|||R:DET|||their|||REQUIRED|||-NONE-|||0
 
 S I agree with this point of view .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3010,10 +3008,10 @@ S Also many people choose movies because they like soundtracks and special effec
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S It 's so exciting . but all these factors are not important for me .
-A 12 13|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 12 13|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S I suppose that books are better than them film version .
-A 7 8|||R:PRON|||their|||REQUIRED|||-NONE-|||0
+A 7 8|||R:DET|||their|||REQUIRED|||-NONE-|||0
 A 9 10|||R:NOUN:NUM|||versions|||REQUIRED|||-NONE-|||0
 
 S To sum up , I 'd like to say reading is really great thing .
@@ -3041,7 +3039,7 @@ S Could you bye it for me ? '' she said .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Her mum could n't deny to her , so she bought it .
-A 5 6|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 5 6|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S Oh!
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3091,7 +3089,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Next day , going at her home her mum wanted to find her daughter .
 A 0 1|||M:DET|||The next|||REQUIRED|||-NONE-|||0
-A 4 5|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 4 5|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 A 7 7|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S So , she went upstairs ...
@@ -3153,10 +3151,10 @@ S Either you can find a professional coach or just join your friends .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Enjoy ! Dear Mrs Kate Ashby , My name is Andrea Cocci , I 'm sixteen , and I saw the advertisement of the weekend work in your cafe , and I 'm interested to work with you .
-A 4 5|||U:PROPN||||||REQUIRED|||-NONE-|||0
+A 4 5|||U:NOUN||||||REQUIRED|||-NONE-|||0
 A 12 13|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 22 23|||R:ADP|||for|||REQUIRED|||-NONE-|||0
-A 34 35|||R:OTHER|||in|||REQUIRED|||-NONE-|||0
+A 22 23|||R:PREP|||for|||REQUIRED|||-NONE-|||0
+A 34 35|||R:PART|||in|||REQUIRED|||-NONE-|||0
 A 35 36|||R:VERB:FORM|||working|||REQUIRED|||-NONE-|||0
 
 S I ' m the perfect choice for this work , in fact , I 'm interested in different kinds of food because I am Italian , and for us food is everything .
@@ -3174,8 +3172,8 @@ S I"m also good at dealing with people , in fact since when I was younger , I ha
 A 7 9|||R:PUNCT|||. In|||REQUIRED|||-NONE-|||0
 A 10 10|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 11 12|||U:ADV||||||REQUIRED|||-NONE-|||0
-A 18 19|||R:OTHER|||been|||REQUIRED|||-NONE-|||0
-A 25 26|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 18 19|||R:VERB|||been|||REQUIRED|||-NONE-|||0
+A 25 26|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S I also worked for many theater companies and I am so good and kind when I talk with other people , also if I do n't know them .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3206,10 +3204,10 @@ S Besides , it can be funny and enjoyable if you plan it properly .
 A 5 6|||R:ADJ|||fun|||REQUIRED|||-NONE-|||0
 
 S However , you will have to spend a considerable amount of money in it and you will not be assured to achieve your goals at all so it would be able to become a real nightmare if you are not focus on your learning tasks .
-A 12 13|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 12 13|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 19 20|||R:OTHER|||sure|||REQUIRED|||-NONE-|||0
 A 26 26|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 28 30|||R:AUX|||will|||REQUIRED|||-NONE-|||0
+A 28 30|||R:VERB|||will|||REQUIRED|||-NONE-|||0
 A 30 32|||U:OTHER||||||REQUIRED|||-NONE-|||0
 A 40 41|||R:VERB:FORM|||focused|||REQUIRED|||-NONE-|||0
 
@@ -3254,7 +3252,7 @@ A 18 19|||R:VERB:FORM|||playing|||REQUIRED|||-NONE-|||0
 
 S I never imagine that I was going to be so keen on football , but now it takes part of my life .
 A 2 3|||R:VERB:TENSE|||imagined|||REQUIRED|||-NONE-|||0
-A 17 18|||R:OTHER|||is|||REQUIRED|||-NONE-|||0
+A 17 18|||R:VERB|||is|||REQUIRED|||-NONE-|||0
 
 S I think football is a very exciting sport , and that everybody in the world should try it at least once in his or her life .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3306,29 +3304,29 @@ S The restaurant is in the shopping center , so we can get there by bus or by tr
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I think this is the best restaurant to go on the end of the course , so we could book some tables as soon as possible because a lot of people usually goes there .
-A 9 10|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 32 33|||R:VERB:SVA|||go|||REQUIRED|||-NONE-|||0
 
 S During whole life , famous people , such as politicians and film stars , media are accompanying them .
-A 1 1|||M:PRON|||their|||REQUIRED|||-NONE-|||0
+A 1 1|||M:DET|||their|||REQUIRED|||-NONE-|||0
 A 2 3|||R:NOUN:NUM|||lives|||REQUIRED|||-NONE-|||0
 A 14 14|||M:OTHER|||and the|||REQUIRED|||-NONE-|||0
-A 15 17|||R:OTHER|||accompany|||REQUIRED|||-NONE-|||0
+A 15 17|||R:VERB:TENSE|||accompany|||REQUIRED|||-NONE-|||0
 
 S In my view , public person deserve to have their own life , without photographing .
-A 5 6|||R:NOUN:NUM|||people|||REQUIRED|||-NONE-|||0
-A 14 15|||R:OTHER|||being photographed|||REQUIRED|||-NONE-|||0
+A 5 6|||R:NOUN|||people|||REQUIRED|||-NONE-|||0
+A 14 15|||R:VERB:TENSE|||being photographed|||REQUIRED|||-NONE-|||0
 
 S In one hand , becoming a public person associate with jornalist , mass - media , flashes .
-A 0 1|||R:ADP|||On|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||On|||REQUIRED|||-NONE-|||0
 A 8 9|||R:VERB:FORM|||associated|||REQUIRED|||-NONE-|||0
 
 S Famous people are obligated to provide their life in exemplary way .
 A 9 9|||M:DET|||an|||REQUIRED|||-NONE-|||0
 
 S However , they still being ordinary people , they make mistakes .
-A 3 3|||M:AUX|||are|||REQUIRED|||-NONE-|||0
-A 4 5|||U:AUX||||||REQUIRED|||-NONE-|||0
+A 3 3|||M:VERB|||are|||REQUIRED|||-NONE-|||0
+A 4 5|||U:VERB||||||REQUIRED|||-NONE-|||0
 
 S People are thought being jealous .
 A 3 4|||R:OTHER|||of be|||REQUIRED|||-NONE-|||0
@@ -3343,14 +3341,14 @@ A 18 19|||R:VERB:SVA|||assesses|||REQUIRED|||-NONE-|||0
 A 19 20|||R:SPELL|||celebrities|||REQUIRED|||-NONE-|||0
 
 S In the other hand many of stars sold their privacy to earn more and more money .
-A 0 1|||R:ADP|||On|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||On|||REQUIRED|||-NONE-|||0
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 5 6|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 5 6|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S The value of their talent , abilities are counted in amonut of tabloids scandals .
 A 5 6|||R:OTHER|||and|||REQUIRED|||-NONE-|||0
 A 10 10|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 12 13|||R:NOUN:NUM|||tabloid|||REQUIRED|||-NONE-|||0
+A 12 13|||R:MORPH|||tabloid|||REQUIRED|||-NONE-|||0
 
 S Summing up , all over the world , are living famous people who do n't bring into the limelight their life .
 A 8 8|||M:PRON|||there|||REQUIRED|||-NONE-|||0
@@ -3358,7 +3356,7 @@ A 20 21|||R:NOUN:NUM|||lives|||REQUIRED|||-NONE-|||0
 
 S It has ever been very useful for a long time ago , nevertheless nowadays , there are some people who ask if the public transport was suppressed , and society would save a lot of money .
 A 1 4|||R:OTHER|||was|||REQUIRED|||-NONE-|||0
-A 6 7|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 6 7|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 11 11|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 11 13|||R:WO|||Nevertheless ,|||REQUIRED|||-NONE-|||0
 A 22 23|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -3384,8 +3382,8 @@ A 12 13|||R:ADV|||very|||REQUIRED|||-NONE-|||0
 
 S If you use the public transport , you can be less contaminating than before because there are a lot of people who travel together in only one transport .
 A 3 4|||U:DET||||||REQUIRED|||-NONE-|||0
-A 11 12|||R:VERB:FORM|||contaminated|||REQUIRED|||-NONE-|||0
-A 24 25|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 11 12|||R:MORPH|||contaminated|||REQUIRED|||-NONE-|||0
+A 24 25|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 
 S Finally , the last reason is the comfort because you have a car ; it is so difficult to find a car park in the centre of the city .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3399,7 +3397,7 @@ S Summing up , people are aware of global warming and think about the high cost 
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S From my point of view , I get used to walking around my city and my car is just used if I travel around the country .
-A 7 8|||R:OTHER|||have gotten|||REQUIRED|||-NONE-|||0
+A 7 8|||R:VERB:TENSE|||have gotten|||REQUIRED|||-NONE-|||0
 
 S We are living in a ever changing world .
 A 4 5|||R:DET|||an|||REQUIRED|||-NONE-|||0
@@ -3414,7 +3412,7 @@ A 14 14|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 17 17|||M:DET|||a|||REQUIRED|||-NONE-|||0
 
 S 50 years is a very long time and people lives will definitely change in such a long period .
-A 9 9|||M:CONTR|||'s|||REQUIRED|||-NONE-|||0
+A 9 9|||M:NOUN:POSS|||'s|||REQUIRED|||-NONE-|||0
 
 S However , the important point to discuss would be whether it would be a positive change or negative one .
 A 17 17|||M:DET|||a|||REQUIRED|||-NONE-|||0
@@ -3422,23 +3420,23 @@ A 17 17|||M:DET|||a|||REQUIRED|||-NONE-|||0
 S Last 50 years science and technology took great leaps , internet , mobiles made us more connected .
 A 0 1|||M:OTHER|||In the last|||REQUIRED|||-NONE-|||0
 A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 6 7|||R:OTHER|||have taken|||REQUIRED|||-NONE-|||0
+A 6 7|||R:VERB:TENSE|||have taken|||REQUIRED|||-NONE-|||0
 A 9 10|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 10 10|||M:DET|||The|||REQUIRED|||-NONE-|||0
 A 11 12|||R:OTHER|||and|||REQUIRED|||-NONE-|||0
 A 13 13|||M:VERB:TENSE|||have|||REQUIRED|||-NONE-|||0
 
 S Today , we have all the information at finger - tips .
-A 8 8|||M:PRON|||our|||REQUIRED|||-NONE-|||0
+A 8 8|||M:DET|||our|||REQUIRED|||-NONE-|||0
 
 S Today , we do n't need to worry about getting lost at new place , Google maps are always there to help .
-A 11 12|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 11 12|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 A 13 14|||R:NOUN:NUM|||places|||REQUIRED|||-NONE-|||0
 A 14 15|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S We need not to cram English words today , as we can quickly find meaning of any word on our mobiles .
 A 1 1|||M:VERB:TENSE|||do|||REQUIRED|||-NONE-|||0
-A 2 3|||U:PART||||||REQUIRED|||-NONE-|||0
+A 2 3|||U:ADV||||||REQUIRED|||-NONE-|||0
 A 14 14|||M:DET|||the|||REQUIRED|||-NONE-|||0
 
 S Meeting new people or selling your products , you do nt need to face anyone , everything can be managed through a virtual platforms .
@@ -3450,35 +3448,35 @@ A 9 9|||M:OTHER|||in the|||REQUIRED|||-NONE-|||0
 
 S On the other hand a number of terrorism , global warming and greed became top challenges of today 's world .
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 13 14|||R:OTHER|||have become|||REQUIRED|||-NONE-|||0
+A 13 14|||R:VERB:TENSE|||have become|||REQUIRED|||-NONE-|||0
 
 S Climate changes due to global warming causing natural disasters now and then .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Terrorist activities causing havoc in public live .
 A 2 3|||R:VERB:FORM|||cause|||REQUIRED|||-NONE-|||0
-A 6 7|||R:NOUN|||life|||REQUIRED|||-NONE-|||0
+A 6 7|||R:SPELL|||life|||REQUIRED|||-NONE-|||0
 
 S Corruption and greed of people in power making it difficult to trust people leaders .
 A 7 8|||R:VERB:FORM|||make|||REQUIRED|||-NONE-|||0
-A 13 13|||M:CONTR|||'s|||REQUIRED|||-NONE-|||0
+A 13 13|||M:NOUN:POSS|||'s|||REQUIRED|||-NONE-|||0
 
 S If these challenges are not addressed in coming years , imagining better lives for people in 50 years hence is rather difficult .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S We need to remember technology is just a tool , in right hand it would be boon for us , in wrong hands it has power to destroy the world as we see it today . to who may concern , I 'm an Italian girl who 's studying to improve her English .
 A 9 10|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 10 11|||R:ADP|||On|||REQUIRED|||-NONE-|||0
+A 10 11|||R:PREP|||On|||REQUIRED|||-NONE-|||0
 A 11 11|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 13 13|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 16 16|||M:DET|||a|||REQUIRED|||-NONE-|||0
 A 19 20|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
-A 20 21|||R:ADP|||On|||REQUIRED|||-NONE-|||0
+A 20 21|||R:PREP|||On|||REQUIRED|||-NONE-|||0
 A 21 21|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 22 23|||R:NOUN:NUM|||hand|||REQUIRED|||-NONE-|||0
 A 23 23|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 25 25|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 36 37|||R:ADP|||For|||REQUIRED|||-NONE-|||0
+A 36 37|||R:PREP|||For|||REQUIRED|||-NONE-|||0
 
 S I 've got a positive and energetic personality .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3532,7 +3530,7 @@ S I need that device near me because I have three children and I want to know ho
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S The same about my parents ; they are old and sometimes they call me for talk about their healht .
-A 14 15|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
+A 14 15|||R:PART|||to|||REQUIRED|||-NONE-|||0
 A 18 19|||R:SPELL|||health|||REQUIRED|||-NONE-|||0
 
 S Concerning video - games , I agree with scientits that they thought its help children 's brain to develop , but is important controller them because there are a lot violent games .
@@ -3541,7 +3539,7 @@ A 12 13|||R:PRON|||it|||REQUIRED|||-NONE-|||0
 A 13 14|||R:VERB:SVA|||helps|||REQUIRED|||-NONE-|||0
 A 21 21|||M:PRON|||it|||REQUIRED|||-NONE-|||0
 A 23 24|||R:OTHER|||for|||REQUIRED|||-NONE-|||0
-A 30 30|||M:ADP|||of|||REQUIRED|||-NONE-|||0
+A 30 30|||M:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S However there are brilliant games for children .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -3550,12 +3548,12 @@ S In my opinion , the Internet is absolutely a revolution in current society .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S It is very common to use the Internet in my work for research or google information and also connect whit other teachers , speak about courses and change information .
-A 8 9|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 8 9|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 19 20|||R:SPELL|||with|||REQUIRED|||-NONE-|||0
 A 27 28|||R:OTHER|||exchange|||REQUIRED|||-NONE-|||0
 
 S Finally , I think technological developments make us improve to the future .
-A 9 10|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 9 10|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 
 S Friends should be like a shadow always beside you .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3565,7 +3563,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Nothing is impossible in life but not doubt it is not easy to find sincere friends .
 A 5 5|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 6 7|||R:OTHER|||no|||REQUIRED|||-NONE-|||0
+A 6 7|||R:ADV|||no|||REQUIRED|||-NONE-|||0
 
 S It does not mean you will never find one .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3576,7 +3574,7 @@ A 13 14|||R:NOUN:NUM|||friends|||REQUIRED|||-NONE-|||0
 
 S The more people you will meet the more easy it will become for you to find a friend .
 A 6 6|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 7 9|||R:ADJ:FORM|||easier|||REQUIRED|||-NONE-|||0
+A 7 9|||R:ADV|||easier|||REQUIRED|||-NONE-|||0
 
 S When you find one spend time with them , share views , ideas and go out with them .
 A 3 4|||R:OTHER|||someone|||REQUIRED|||-NONE-|||0
@@ -3596,7 +3594,7 @@ A 46 47|||R:ORTH|||Readers|||REQUIRED|||-NONE-|||0
 
 S As result , it is suitable for students who learn English Language to improve their English .
 A 1 1|||M:DET|||a|||REQUIRED|||-NONE-|||0
-A 11 12|||U:PROPN||||||REQUIRED|||-NONE-|||0
+A 11 12|||U:NOUN||||||REQUIRED|||-NONE-|||0
 
 S On the other hand , I realised there were two disadvantages .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3616,11 +3614,11 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Nowadays , in the modern and progressive world where people are smart and economy very highly developed .
 A 13 13|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 14 14|||M:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
+A 14 14|||M:VERB|||is|||REQUIRED|||-NONE-|||0
 
 S Some people think that we need in tablet computers instead books
-A 6 7|||U:ADP||||||REQUIRED|||-NONE-|||0
-A 10 10|||M:ADP|||of|||REQUIRED|||-NONE-|||0
+A 6 7|||U:PREP||||||REQUIRED|||-NONE-|||0
+A 10 10|||M:PREP|||of|||REQUIRED|||-NONE-|||0
 
 S In my opinion , the problem is very interesting .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3646,7 +3644,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Pupil could not say that he left a book because he has all books in his tablet computers
 A 13 13|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 14 15|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 14 15|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 18 18|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S Some people think that it is a bed idea .
@@ -3664,7 +3662,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S Personally for me , I like books very much .when I at home I use books because I like to smell and to touch the paper of books .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 9 10|||R:ORTH|||. When|||REQUIRED|||-NONE-|||0
-A 11 11|||M:AUX|||am|||REQUIRED|||-NONE-|||0
+A 11 11|||M:VERB|||am|||REQUIRED|||-NONE-|||0
 
 S I do not agree with the people who think that tablets are useless .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -3673,24 +3671,24 @@ S We should use it but we are must not forget about books .
 A 6 7|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0
 
 S In conclusion , I want to say that that we should keep abreast of new technologies and try to make our lives easier The Big Mistake
-A 7 8|||U:SCONJ||||||REQUIRED|||-NONE-|||0
+A 7 8|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 23 23|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S This day was full of joy and happiness , but something went wrong after when she told him that she is pregnant .
-A 20 21|||R:AUX|||was|||REQUIRED|||-NONE-|||0
+A 20 21|||R:VERB:TENSE|||was|||REQUIRED|||-NONE-|||0
 
 S She was so happy about this news and she thought that he will be happy as well , but ...
 A 12 13|||R:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0
 
 S At the moment when she told him that she is pregnant , he just frozen .
-A 9 10|||R:AUX|||was|||REQUIRED|||-NONE-|||0
+A 9 10|||R:VERB:TENSE|||was|||REQUIRED|||-NONE-|||0
 A 14 15|||R:MORPH|||froze|||REQUIRED|||-NONE-|||0
 
 S It was too much for him .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S He thought it 's easier to walk away and avoid this conversation with her .
-A 3 4|||R:AUX|||would be|||REQUIRED|||-NONE-|||0
+A 3 4|||R:VERB:TENSE|||would be|||REQUIRED|||-NONE-|||0
 
 S He tried to understand what 's going on with him .
 A 5 6|||R:CONTR|||was|||REQUIRED|||-NONE-|||0
@@ -3699,9 +3697,9 @@ S It was weird how many questions and doubts came up on his head .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S One part of him was really happy , because to be a father is his one of the biggest dream , but on the other hand he could n't handle this news .
-A 9 11|||R:OTHER|||being|||REQUIRED|||-NONE-|||0
-A 14 15|||U:PRON||||||REQUIRED|||-NONE-|||0
-A 17 18|||R:OTHER|||his|||REQUIRED|||-NONE-|||0
+A 9 11|||R:VERB:FORM|||being|||REQUIRED|||-NONE-|||0
+A 14 15|||U:DET||||||REQUIRED|||-NONE-|||0
+A 17 18|||R:DET|||his|||REQUIRED|||-NONE-|||0
 A 19 20|||R:NOUN:NUM|||dreams|||REQUIRED|||-NONE-|||0
 A 26 26|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
@@ -3723,12 +3721,12 @@ A 6 7|||U:PUNCT||||||REQUIRED|||-NONE-|||0
 S He knew that she loves him as much as he loves her , but everything was just too wrong on this moment .
 A 4 5|||R:VERB:TENSE|||loved|||REQUIRED|||-NONE-|||0
 A 10 11|||R:VERB:TENSE|||loved|||REQUIRED|||-NONE-|||0
-A 19 20|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 19 20|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 20 21|||R:DET|||that|||REQUIRED|||-NONE-|||0
 
 S Her voice , her smile and even her body was to wrong on this moment .
 A 10 11|||R:SPELL|||too|||REQUIRED|||-NONE-|||0
-A 12 13|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 12 13|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 13 14|||R:DET|||that|||REQUIRED|||-NONE-|||0
 
 S She could n't understand what 's going on , because it was just three weeks ago when they had a conversation about kids and family and he said that he would like to have kids with her .
@@ -3748,7 +3746,7 @@ A 5 6|||R:VERB:TENSE|||loved|||REQUIRED|||-NONE-|||0
 A 10 11|||R:VERB:TENSE|||cared|||REQUIRED|||-NONE-|||0
 
 S He stood up and said to her girlfriend that he needs a break and he have to be alone .
-A 6 7|||R:PRON|||his|||REQUIRED|||-NONE-|||0
+A 6 7|||R:DET|||his|||REQUIRED|||-NONE-|||0
 A 10 11|||R:VERB:TENSE|||needed|||REQUIRED|||-NONE-|||0
 A 15 16|||R:VERB:TENSE|||had|||REQUIRED|||-NONE-|||0
 
@@ -3802,7 +3800,7 @@ A 14 14|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 37 38|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0
 
 S Even you really do not like to do exercise that you can go to shop .
-A 1 1|||M:SCONJ|||if|||REQUIRED|||-NONE-|||0
+A 1 1|||M:PREP|||if|||REQUIRED|||-NONE-|||0
 A 9 10|||R:OTHER|||,|||REQUIRED|||-NONE-|||0
 A 13 15|||R:OTHER|||shopping|||REQUIRED|||-NONE-|||0
 
@@ -3813,11 +3811,11 @@ S In the first place , we need to pay attention to the fact that Caceres is loca
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S As a result , our water resources are difficult to be preserved and it is clearly necessary to maintain active campaigns to raise people 's awareness about the importance of a rational use of it .
-A 10 12|||R:OTHER|||preserve|||REQUIRED|||-NONE-|||0
+A 10 12|||R:VERB:TENSE|||preserve|||REQUIRED|||-NONE-|||0
 A 30 31|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S The local government is also taking strong action on creating green areas in different places in or around the town where citizens can spend their free time or even do sports .
-A 8 9|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
+A 8 9|||R:PART|||to|||REQUIRED|||-NONE-|||0
 A 9 10|||R:VERB:FORM|||create|||REQUIRED|||-NONE-|||0
 
 S That 's the reason why it has been working on the recovery of some areas which are now parks or recreational areas .
@@ -3825,7 +3823,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Finally , the town has also improved the management and treatment of waste system with the active cooperation of most of the citizenship who is really concerned about the recycling of waste need .
 A 12 12|||M:DET|||the|||REQUIRED|||-NONE-|||0
-A 24 25|||R:AUX|||are|||REQUIRED|||-NONE-|||0
+A 24 25|||R:VERB:SVA|||are|||REQUIRED|||-NONE-|||0
 A 32 33|||U:NOUN||||||REQUIRED|||-NONE-|||0
 
 S In fact , around 90% of Caceres inhabitants are said to sort and recycle their rubbish taking it out to the yellow , green and blue containers in every street .
@@ -3837,22 +3835,22 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I woke up today and I just remember that I was doing a presentation about landscapes , and the ones that do it will reward a bonus point but anyways this is n't important information .
 A 7 8|||R:VERB:TENSE|||remembered|||REQUIRED|||-NONE-|||0
-A 24 25|||R:OTHER|||be rewarded|||REQUIRED|||-NONE-|||0
-A 25 25|||M:ADP|||with|||REQUIRED|||-NONE-|||0
+A 24 25|||R:VERB:TENSE|||be rewarded|||REQUIRED|||-NONE-|||0
+A 25 25|||M:PREP|||with|||REQUIRED|||-NONE-|||0
 A 28 28|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 30 30|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S I searched my family in the house and there was no one in the home , just me .
-A 2 2|||M:ADP|||for|||REQUIRED|||-NONE-|||0
+A 2 2|||M:PREP|||for|||REQUIRED|||-NONE-|||0
 A 14 15|||R:NOUN|||house|||REQUIRED|||-NONE-|||0
 
 S I get a bit scared so I search them outside in the streets .
 A 5 5|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 8 8|||M:ADP|||for|||REQUIRED|||-NONE-|||0
+A 8 8|||M:PREP|||for|||REQUIRED|||-NONE-|||0
 
 S I did n't knew that a bomb hit on the city and killed almost everyone , now I have to find my parents .
 A 3 4|||R:VERB:FORM|||know|||REQUIRED|||-NONE-|||0
-A 8 9|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 8 9|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 15 17|||R:PUNCT|||. Now|||REQUIRED|||-NONE-|||0
 
 S I think the reason why I did n't know about the explosion is because this part where I live is a very poor area and it 's not that beautiful so you ca n't distinguish were does the explosion hit .
@@ -3874,7 +3872,7 @@ A 3 4|||R:VERB:INFL|||going|||REQUIRED|||-NONE-|||0
 A 4 5|||R:MORPH|||to|||REQUIRED|||-NONE-|||0
 
 S In the next morning I ate a piece of steak and the group was talking about some creatures that were walking around to kill and eat us .
-A 0 2|||U:ADP|||The|||REQUIRED|||-NONE-|||0
+A 0 2|||U:PREP|||The|||REQUIRED|||-NONE-|||0
 A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S In the night I was thinking about many things just when I heard some noises .
@@ -3917,7 +3915,7 @@ S Do you know that 75% of people in Mexico , does n't practice any type of exerc
 A 9 11|||R:OTHER|||do|||REQUIRED|||-NONE-|||0
 A 12 13|||R:VERB|||do|||REQUIRED|||-NONE-|||0
 A 17 19|||R:PUNCT|||? This|||REQUIRED|||-NONE-|||0
-A 23 24|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 23 24|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 A 28 29|||U:DET||||||REQUIRED|||-NONE-|||0
 A 39 40|||R:OTHER|||the most|||REQUIRED|||-NONE-|||0
 
@@ -3926,19 +3924,19 @@ A 2 4|||R:OTHER|||is|||REQUIRED|||-NONE-|||0
 A 15 17|||R:PUNCT|||. While|||REQUIRED|||-NONE-|||0
 A 22 25|||U:OTHER||||||REQUIRED|||-NONE-|||0
 A 26 27|||R:SPELL|||and|||REQUIRED|||-NONE-|||0
-A 27 28|||R:PRON|||your|||REQUIRED|||-NONE-|||0
-A 28 29|||U:AUX||||||REQUIRED|||-NONE-|||0
+A 27 28|||R:DET|||your|||REQUIRED|||-NONE-|||0
+A 28 29|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S There 's a lot of benefits that come in hand with doing excercise like reducing or take control of you re weight , it helps you with heart disease , problems with you re body , and also you can make a lot of friends while doing any exercise .
 A 1 2|||R:CONTR|||are|||REQUIRED|||-NONE-|||0
 A 12 13|||R:SPELL|||exercise|||REQUIRED|||-NONE-|||0
 A 13 13|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 16 17|||R:VERB:FORM|||taking|||REQUIRED|||-NONE-|||0
-A 19 20|||R:PRON|||your|||REQUIRED|||-NONE-|||0
-A 20 21|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 19 20|||R:DET|||your|||REQUIRED|||-NONE-|||0
+A 20 21|||U:PREP||||||REQUIRED|||-NONE-|||0
 A 22 24|||R:PUNCT|||. It|||REQUIRED|||-NONE-|||0
-A 32 33|||R:PRON|||your|||REQUIRED|||-NONE-|||0
-A 33 34|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 32 33|||R:DET|||your|||REQUIRED|||-NONE-|||0
+A 33 34|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S Now days there 's a lot of different types of exercising , you can practice any sport , like soccer , basketball , baseball , or you can simply go to the GYM or practise Crossfit or something like that .
 A 0 1|||R:ADV|||Nowadays|||REQUIRED|||-NONE-|||0
@@ -3959,13 +3957,13 @@ S Thanks and start now , you wo n't regret it .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Is there any future to public transport , for travelling by car is much more convenient ?
-A 4 5|||R:ADP|||for|||REQUIRED|||-NONE-|||0
-A 8 9|||R:SCONJ|||because|||REQUIRED|||-NONE-|||0
+A 4 5|||R:PREP|||for|||REQUIRED|||-NONE-|||0
+A 8 9|||R:PREP|||because|||REQUIRED|||-NONE-|||0
 
 S Many disagree about the public transport whom are to be disappearing , though we still have to deal with different opinions about increasing in travelling .
 A 3 4|||U:DET||||||REQUIRED|||-NONE-|||0
 A 6 7|||R:PRON|||which|||REQUIRED|||-NONE-|||0
-A 7 10|||R:OTHER|||is|||REQUIRED|||-NONE-|||0
+A 7 10|||R:VERB:FORM|||is|||REQUIRED|||-NONE-|||0
 A 22 22|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 22 23|||R:MORPH|||increase|||REQUIRED|||-NONE-|||0
 A 24 25|||R:MORPH|||travel|||REQUIRED|||-NONE-|||0
@@ -4003,38 +4001,38 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Obviously it would benefit me if I worked in Edinburgh , but I do n't work in Edinburgh . » says a 17 - 22 years old boy .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 19 20|||R:PUNCT|||"|||REQUIRED|||-NONE-|||0
+A 19 20|||R:OTHER|||"|||REQUIRED|||-NONE-|||0
 A 25 26|||R:NOUN:NUM|||year|||REQUIRED|||-NONE-|||0
 
 S Now , secondly , travelling by public transport is cheaper ( we do n't pay any fees on public transport , but also , it is safer , According to The Saigon Times , there are a lot of traffic accidents which occurred to private cars .
 A 27 28|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 42 43|||R:VERB:TENSE|||occur|||REQUIRED|||-NONE-|||0
-A 43 44|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 43 44|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S The main reason is that the cars ' owners are drunk when driving .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S It is clear that if they took a bus or a taxi when they were drank , it would not have as much accidents .
-A 15 16|||R:SPELL|||drunk|||REQUIRED|||-NONE-|||0
+A 15 16|||R:ADJ|||drunk|||REQUIRED|||-NONE-|||0
 A 17 18|||R:PRON|||there|||REQUIRED|||-NONE-|||0
 A 20 21|||R:VERB|||be|||REQUIRED|||-NONE-|||0
 A 22 23|||R:ADJ|||many|||REQUIRED|||-NONE-|||0
 
 S Finally , many developed countries on the world , such as England , America , Canada , Japan and so on , have built a public transport system , so the traffic jam have been decreased .
-A 5 6|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 5 6|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 A 32 33|||R:NOUN:NUM|||jams|||REQUIRED|||-NONE-|||0
 
 S As a result , the economy has been increasing .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S From this analysis , it isobvious that travelling by public transport is very important .
-A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
+A 5 6|||R:ORTH|||is obvious|||REQUIRED|||-NONE-|||0
 
 S Topic :
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Do you agree or disagree " Always telling the truth is considered the most important thing in a relationship " ?
-A 5 5|||M:ADP|||with|||REQUIRED|||-NONE-|||0
+A 5 5|||M:PREP|||with|||REQUIRED|||-NONE-|||0
 A 6 7|||R:ORTH|||always|||REQUIRED|||-NONE-|||0
 
 S Disagreement on always telling the truth be the most important point in a relationship will be my opinion .
@@ -4044,7 +4042,7 @@ S Even though being truthful is crucial in relationship , always telling the tru
 A 7 8|||R:NOUN:NUM|||relationships|||REQUIRED|||-NONE-|||0
 
 S Another reason for not telling the truth all the time is if it is about personal matter and it would feel like awkward to mention to colleagues or the employer .
-A 21 22|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 21 22|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S It is better to tell a little white lie at this moment .
 A 10 11|||R:DET|||the|||REQUIRED|||-NONE-|||0
@@ -4053,7 +4051,7 @@ S To further illustrate the first point above , could hurt one 's feelings by te
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S For example , if some woman you are acquainted wearing inappropriate clothes not fitting in the occasion .
-A 9 9|||M:SCONJ|||with|||REQUIRED|||-NONE-|||0
+A 9 9|||M:PREP|||with|||REQUIRED|||-NONE-|||0
 A 12 12|||M:VERB:TENSE|||does|||REQUIRED|||-NONE-|||0
 A 13 15|||R:OTHER|||fit|||REQUIRED|||-NONE-|||0
 
@@ -4063,7 +4061,7 @@ A 4 5|||R:VERB:FORM|||to tell|||REQUIRED|||-NONE-|||0
 A 11 12|||R:VERB|||hurt|||REQUIRED|||-NONE-|||0
 
 S Instead of doing so , people may praise her with other things on her .
-A 12 13|||R:ADP|||about|||REQUIRED|||-NONE-|||0
+A 12 13|||R:PREP|||about|||REQUIRED|||-NONE-|||0
 
 S In that case , they could still make conversions without boiling her mood .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -4071,14 +4069,14 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S The other point is when it comes to personal matters , people usually intend to keep it private since most of the time it is strange and inappropriate to talk oneself too much to people at work or even people that one just got acquainted .
 A 18 18|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 42 42|||M:VERB:TENSE|||has|||REQUIRED|||-NONE-|||0
-A 43 44|||R:OTHER|||gotten|||REQUIRED|||-NONE-|||0
-A 45 45|||M:ADP|||with|||REQUIRED|||-NONE-|||0
+A 43 44|||R:MORPH|||gotten|||REQUIRED|||-NONE-|||0
+A 45 45|||M:PREP|||with|||REQUIRED|||-NONE-|||0
 
 S If there are questions about things one do not want other people to know , they might say a little white lie which usually does not matter too much .
-A 7 8|||R:VERB:TENSE|||does|||REQUIRED|||-NONE-|||0
+A 7 8|||R:VERB:SVA|||does|||REQUIRED|||-NONE-|||0
 
 S If I was having a day off to go to a doctor , I would prefer other people from asking details about it by say that I just had some errands to run .
-A 18 19|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
+A 18 19|||R:PART|||to|||REQUIRED|||-NONE-|||0
 A 19 20|||R:VERB:FORM|||ask|||REQUIRED|||-NONE-|||0
 A 24 25|||R:VERB:FORM|||saying|||REQUIRED|||-NONE-|||0
 
@@ -4087,7 +4085,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Last Friday , Michael and I was in the school playing happily with each other in the classroom .
 A 6 7|||R:VERB:SVA|||were|||REQUIRED|||-NONE-|||0
-A 7 8|||R:ADP|||at|||REQUIRED|||-NONE-|||0
+A 7 8|||R:PREP|||at|||REQUIRED|||-NONE-|||0
 A 8 9|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S When we were in the class , suddenly Michael walked towards the door .
@@ -4111,15 +4109,15 @@ A 6 7|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S I asked the headmaster in a polite way and hopefully he can gave me the answer I wanted .
 A 11 12|||R:VERB:TENSE|||could|||REQUIRED|||-NONE-|||0
-A 12 13|||R:VERB:TENSE|||give|||REQUIRED|||-NONE-|||0
+A 12 13|||R:VERB|||give|||REQUIRED|||-NONE-|||0
 
 S However , things do n't happened like what I hoped .
 A 5 6|||R:VERB:FORM|||happen|||REQUIRED|||-NONE-|||0
 
 S I ended getting expelled from the school because teacher and the classmates suspected Michael and I steal our classmate - Sally 's wallet .
-A 2 2|||M:ADP|||up|||REQUIRED|||-NONE-|||0
+A 2 2|||M:PART|||up|||REQUIRED|||-NONE-|||0
 A 5 8|||R:WO|||school because the|||REQUIRED|||-NONE-|||0
-A 16 17|||R:OTHER|||had stolen|||REQUIRED|||-NONE-|||0
+A 16 17|||R:VERB:TENSE|||had stolen|||REQUIRED|||-NONE-|||0
 
 S I could n't imagine the teacher and friends also pointed at us firmly and without given any chance for us to speak out .
 A 9 10|||R:VERB:FORM|||pointing|||REQUIRED|||-NONE-|||0
@@ -4134,7 +4132,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S Although , one day later the headmaster found out the truth through CCTV , but we refused to return to the school and decided to change a new school as we know even if we go back this time , similar cases could happen next time .
 A 0 1|||R:ADV|||However|||REQUIRED|||-NONE-|||0
 A 5 5|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 26 26|||M:ADP|||to|||REQUIRED|||-NONE-|||0
+A 26 26|||M:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S This is because the teacher has a biased mindset .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -4158,12 +4156,12 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I like making puzzles or games which imply running , jumping which are important for the kids development .
 A 11 11|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 17 17|||M:PART|||'|||REQUIRED|||-NONE-|||0
+A 17 17|||M:NOUN:POSS|||'|||REQUIRED|||-NONE-|||0
 
 S I am not very good t cooking but because I never have time to dedicate time on that .
 A 5 6|||R:SPELL|||at|||REQUIRED|||-NONE-|||0
 A 7 8|||R:OTHER|||,|||REQUIRED|||-NONE-|||0
-A 16 17|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 16 17|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S I think that if I watch and learn how to do it I would learn very fast and can dominate it .
 A 12 12|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -4175,7 +4173,7 @@ A 15 17|||R:WO|||can also|||REQUIRED|||-NONE-|||0
 A 21 22|||R:NOUN:NUM|||things|||REQUIRED|||-NONE-|||0
 
 S I am very exited about this job and I hope you reply soon .
-A 3 4|||R:SPELL|||excited|||REQUIRED|||-NONE-|||0
+A 3 4|||R:ADJ|||excited|||REQUIRED|||-NONE-|||0
 
 S Bianca Day number 8 .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -4183,7 +4181,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 S We were ready to go and find the others , we went outside the shelter we built and write in wall near to the shelter " safe zone " and if there is someone that needs supplies he would find some supplies and ammo to survive .
 A 9 11|||R:PUNCT|||. We|||REQUIRED|||-NONE-|||0
 A 18 19|||R:VERB:TENSE|||wrote|||REQUIRED|||-NONE-|||0
-A 19 20|||R:ADP|||on|||REQUIRED|||-NONE-|||0
+A 19 20|||R:PREP|||on|||REQUIRED|||-NONE-|||0
 A 20 20|||M:DET|||the|||REQUIRED|||-NONE-|||0
 A 32 33|||R:VERB:TENSE|||was|||REQUIRED|||-NONE-|||0
 A 35 36|||R:VERB:TENSE|||needed|||REQUIRED|||-NONE-|||0
@@ -4194,14 +4192,14 @@ A 9 11|||R:PUNCT|||. There|||REQUIRED|||-NONE-|||0
 A 11 12|||R:VERB:SVA|||were|||REQUIRED|||-NONE-|||0
 A 20 21|||M:PUNCT|||. There|||REQUIRED|||-NONE-|||0
 A 27 28|||M:PUNCT|||. We|||REQUIRED|||-NONE-|||0
-A 33 34|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
+A 33 34|||R:PART|||to|||REQUIRED|||-NONE-|||0
 A 34 35|||U:PUNCT||||||REQUIRED|||-NONE-|||0
 A 37 38|||R:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S I thought that maybe my # genes were actually immune to the infection I could actually be the # revolutionary guy that helps everyone that was in my # skeptick and I was really positive about it but # notwithstanding , I would n't actually sacrifice myself I have to think about is it help the entire world or just save a group the decision was in my hands it was # conventional to help the entire world but I do n't want to die .
 A 13 13|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 A 37 37|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 38 39|||U:OTHER||||||REQUIRED|||-NONE-|||0
+A 38 39|||U:NOUN||||||REQUIRED|||-NONE-|||0
 A 47 47|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S while I was thinking about that we found a body it was a familiar body from someone that was in the group one of those guys we wanted to find and alive not dead his face was all rotten and eaten away by the walkers .
@@ -4209,7 +4207,7 @@ A 0 1|||R:ORTH|||While|||REQUIRED|||-NONE-|||0
 A 6 6|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 10 11|||M:PUNCT|||. It|||REQUIRED|||-NONE-|||0
 A 22 23|||M:PUNCT|||. One|||REQUIRED|||-NONE-|||0
-A 31 31|||M:AUX|||was|||REQUIRED|||-NONE-|||0
+A 31 31|||M:VERB|||was|||REQUIRED|||-NONE-|||0
 A 34 35|||M:PUNCT|||. His|||REQUIRED|||-NONE-|||0
 
 S We needed to find the ones that were still alive or at least tells us what happened to everyone , the # battle against hunger started everyone was hungry and we haven't eaten anything in a few days and that could lead us to two things dead or eaten away by a walker so we needed to find something that was a # nutritional based food where we could eat with no problem and be ok .
@@ -4217,7 +4215,7 @@ A 13 14|||R:VERB:SVA|||tell|||REQUIRED|||-NONE-|||0
 A 19 21|||R:PUNCT|||. The|||REQUIRED|||-NONE-|||0
 A 26 27|||M:PUNCT|||. Everyone|||REQUIRED|||-NONE-|||0
 A 31 32|||R:OTHER|||had|||REQUIRED|||-NONE-|||0
-A 33 34|||R:PRON|||everything|||REQUIRED|||-NONE-|||0
+A 33 34|||R:NOUN|||everything|||REQUIRED|||-NONE-|||0
 A 46 46|||M:PUNCT|||:|||REQUIRED|||-NONE-|||0
 
 S We found a pharmacy and a restroom where we could get a rest and take a shower to clean ourselves .
@@ -4243,7 +4241,7 @@ S When you have to pay the telephone and energy bills , you can do that in any t
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S If you like shopping , in the perimeter of the town , there are some big supermarkets , which hold many items of the main great factories of Europe and above .
-A 22 23|||R:ADP|||from|||REQUIRED|||-NONE-|||0
+A 22 23|||R:PREP|||from|||REQUIRED|||-NONE-|||0
 
 S Like all the industrialised countries , a connection to the Internet is granted almost for each area and each building .
 A 2 3|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -4290,19 +4288,19 @@ S To my mind , they do not believe celebs are such a normal people as everyone o
 A 11 12|||U:DET||||||REQUIRED|||-NONE-|||0
 A 15 16|||R:OTHER|||any|||REQUIRED|||-NONE-|||0
 A 18 18|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 23 24|||R:PRON|||their|||REQUIRED|||-NONE-|||0
+A 23 24|||R:OTHER|||their|||REQUIRED|||-NONE-|||0
 A 26 26|||M:PUNCT|||.|||REQUIRED|||-NONE-|||0
 
 S So , as you can see I agree with the statement that famous people , who are recognizable , deserve to have a privte life and the ability of having normal life should be also given to them .
 A 6 6|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 23 24|||R:SPELL|||private|||REQUIRED|||-NONE-|||0
-A 28 29|||R:OTHER|||to|||REQUIRED|||-NONE-|||0
+A 28 29|||R:PART|||to|||REQUIRED|||-NONE-|||0
 A 29 30|||R:VERB:FORM|||have|||REQUIRED|||-NONE-|||0
 A 30 30|||M:DET|||a|||REQUIRED|||-NONE-|||0
 A 34 35|||U:ADV||||||REQUIRED|||-NONE-|||0
 
 S The Maze Runner I recently watched this new film based on one of the books of this worldwide known author .
-A 15 16|||R:ADP|||by|||REQUIRED|||-NONE-|||0
+A 15 16|||R:PREP|||by|||REQUIRED|||-NONE-|||0
 A 17 18|||R:OTHER|||world -|||REQUIRED|||-NONE-|||0
 
 S As I have an interest in thrillers , I decided to give it a try .
@@ -4325,9 +4323,9 @@ S The people who lives in the camp take up different roles in order to survive a
 A 3 4|||R:VERB:SVA|||live|||REQUIRED|||-NONE-|||0
 
 S He took the role of a runner , the people responsible for exploring the maze and look for an exit of this place .
-A 9 10|||R:NOUN:NUM|||person|||REQUIRED|||-NONE-|||0
+A 9 10|||R:NOUN|||person|||REQUIRED|||-NONE-|||0
 A 16 17|||R:VERB:FORM|||looking|||REQUIRED|||-NONE-|||0
-A 20 21|||R:ADP|||from|||REQUIRED|||-NONE-|||0
+A 20 21|||R:PREP|||from|||REQUIRED|||-NONE-|||0
 
 S Still , they only have the daylight time to explore the maze , as when the sun goes down it becomes very dangerous .
 A 5 6|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -4372,14 +4370,14 @@ S It is a good place to live .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S One time per week on Wednesday , robbish are taken .
-A 8 9|||R:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
+A 8 9|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
 
 S Of course garbage is sorted into different bins .
 A 2 2|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S That is very good idea , because that robbish undergo a recycling .
 A 2 2|||M:DET|||a|||REQUIRED|||-NONE-|||0
-A 9 10|||R:VERB:SVA|||undergoes|||REQUIRED|||-NONE-|||0
+A 9 10|||R:MORPH|||undergoes|||REQUIRED|||-NONE-|||0
 A 10 11|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S All my neighbors in the same way collected garbage .
@@ -4405,7 +4403,7 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S There were two rooms , smoking room or non - smoking room .
 A 5 5|||M:DET|||a|||REQUIRED|||-NONE-|||0
-A 7 8|||R:CCONJ|||and|||REQUIRED|||-NONE-|||0
+A 7 8|||R:CONJ|||and|||REQUIRED|||-NONE-|||0
 A 8 8|||M:DET|||a|||REQUIRED|||-NONE-|||0
 
 S The surroundings were rustic , yet it still felt airy and cosy , the waiters were very friendly and informative .
@@ -4431,7 +4429,7 @@ S They have been present in our societies since ever .
 A 6 7|||R:NOUN:NUM|||society|||REQUIRED|||-NONE-|||0
 
 S Cannabis , heroin , speed are some examples of substances that are really well - known for all of us .
-A 16 17|||R:ADP|||to|||REQUIRED|||-NONE-|||0
+A 16 17|||R:PREP|||to|||REQUIRED|||-NONE-|||0
 
 S Legalization of drugs is a very used argument by people who believe that this measure could solve the problem of the exclusion .
 A 20 21|||U:DET||||||REQUIRED|||-NONE-|||0
@@ -4441,12 +4439,12 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S Also this illegality is the guilty for the attraction of the drugs because the majority of people start having drugs because they are young and its prohibition is very stimulating .
 A 1 1|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
-A 5 6|||R:NOUN|||cause|||REQUIRED|||-NONE-|||0
+A 5 6|||R:OTHER|||cause|||REQUIRED|||-NONE-|||0
 A 10 11|||U:DET||||||REQUIRED|||-NONE-|||0
 
 S The real problem comes when this entertainment become in an addiction that can destroy our lives .
 A 7 8|||R:VERB:SVA|||becomes|||REQUIRED|||-NONE-|||0
-A 8 9|||U:ADP||||||REQUIRED|||-NONE-|||0
+A 8 9|||U:PREP||||||REQUIRED|||-NONE-|||0
 
 S I think everyone has proved some kind of illegal drug to have fun , enjoy friends or just to prove them , and I do not believe that behaviour is wrong because everyone needs to experiment and try new things .
 A 4 5|||R:VERB|||tried|||REQUIRED|||-NONE-|||0
@@ -4455,7 +4453,7 @@ A 31 31|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 S But we have to be responsible and have very clear that it is only something exceptional and not our daily life because it is very dangerous as some people are not able to put deadlines to themselves .
 A 7 8|||R:VERB|||make|||REQUIRED|||-NONE-|||0
 A 33 34|||R:VERB|||set|||REQUIRED|||-NONE-|||0
-A 35 36|||R:ADP|||for|||REQUIRED|||-NONE-|||0
+A 35 36|||R:PREP|||for|||REQUIRED|||-NONE-|||0
 
 S Finally , legalization of drugs means that they could be taxable and we know how the taxes work in our country so I do not know if it is a good idea or not .
 A 21 21|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
@@ -4483,7 +4481,7 @@ A 23 25|||R:PUNCT|||. After|||REQUIRED|||-NONE-|||0
 A 30 30|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S So excited to see you !
-A 2 3|||R:OTHER|||about|||REQUIRED|||-NONE-|||0
+A 2 3|||R:PART|||about|||REQUIRED|||-NONE-|||0
 A 3 4|||R:VERB:FORM|||seeing|||REQUIRED|||-NONE-|||0
 
 S Bye for now .
@@ -4496,8 +4494,8 @@ S Dear Les , Firstly , Spain is a great place for holidays in summer .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S In that time , it is always sunny and , depending on the region , it could rain .
-A 0 1|||R:ADP|||At|||REQUIRED|||-NONE-|||0
-A 5 6|||R:AUX|||was|||REQUIRED|||-NONE-|||0
+A 0 1|||R:PREP|||At|||REQUIRED|||-NONE-|||0
+A 5 6|||R:VERB:TENSE|||was|||REQUIRED|||-NONE-|||0
 
 S If you want to see some beautiful scenery , you must go to Barcelona where you will be able to see La Sagrada Familia , which was built by Antoni Gaudi , or La Alambra in Granada , which is one of the Seven Wonders of the World .
 A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
@@ -4606,22 +4604,22 @@ A -1 -1|||noop|||-NONE-|||REQUIRED|||-NONE-|||0
 
 S I am very much worried about the town where I am staying because everybody of this town is not bother about rubbish things they do every day .
 A 3 4|||U:ADV||||||REQUIRED|||-NONE-|||0
-A 14 15|||R:ADP|||in|||REQUIRED|||-NONE-|||0
+A 14 15|||R:PREP|||in|||REQUIRED|||-NONE-|||0
 A 19 20|||R:VERB:FORM|||bothered|||REQUIRED|||-NONE-|||0
 
 S First of all they are very dirty by nature . they are very casual with the environment and the importance of cleanliness .
 A 3 3|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 A 10 11|||R:ORTH|||They|||REQUIRED|||-NONE-|||0
-A 14 15|||R:ADP|||about|||REQUIRED|||-NONE-|||0
+A 14 15|||R:PREP|||about|||REQUIRED|||-NONE-|||0
 
 S So called people of good nature are inactive and talkative and gossip of others not doing anything for the betterment of their own town .
 A 1 1|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0
-A 12 13|||R:ADP|||about|||REQUIRED|||-NONE-|||0
+A 12 13|||R:PREP|||about|||REQUIRED|||-NONE-|||0
 A 14 14|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
 
 S All the household nearby the public road throws the dirty things easily and even do n't bother about the order of the municipality .
 A 2 3|||R:NOUN:NUM|||households|||REQUIRED|||-NONE-|||0
-A 3 4|||R:OTHER|||near|||REQUIRED|||-NONE-|||0
+A 3 4|||R:PREP|||near|||REQUIRED|||-NONE-|||0
 A 6 7|||R:NOUN:NUM|||roads|||REQUIRED|||-NONE-|||0
 A 7 8|||R:VERB:SVA|||throw|||REQUIRED|||-NONE-|||0
 A 8 9|||R:OTHER|||away|||REQUIRED|||-NONE-|||0
@@ -4630,8 +4628,8 @@ A 16 16|||M:ADV|||even|||REQUIRED|||-NONE-|||0
 
 S I see all these during my morning walk . what I feel is that everyone who are staying the town should at least keep clean their own front places and sides surrounds them .
 A 9 10|||R:ORTH|||What|||REQUIRED|||-NONE-|||0
-A 16 17|||R:VERB:TENSE|||is|||REQUIRED|||-NONE-|||0
-A 18 18|||M:ADP|||in|||REQUIRED|||-NONE-|||0
+A 16 17|||R:VERB:SVA|||is|||REQUIRED|||-NONE-|||0
+A 18 18|||M:PREP|||in|||REQUIRED|||-NONE-|||0
 
 S I am upset about it and whenever I get a chance I speak with my fellow people and look for their feedback but they are also the same in nature .
 A 22 22|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0
