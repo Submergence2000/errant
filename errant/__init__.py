@@ -30,7 +30,7 @@ def load(lang, nlp=None, legacy=False):
         if lang not in stanza_supported:
             raise ValueError(f"{lang} is an unsupported or unknown language")
         
-        nlp = nlp or stanza.Pipeline(lang, tokenize_pretokenized=True)
+        nlp = nlp or stanza.Pipeline(lang)
         merger = import_module(f"errant.multi.merger")
         classifier = import_module(f"errant.multi.classifier")
         classifier.nlp = nlp

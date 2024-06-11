@@ -8,7 +8,7 @@ def main():
     args = parse_args()
     print("Loading resources...")
     # Load Errant
-    annotator = errant.load("en", legacy=True)
+    annotator = errant.load(args.lang)
 
     print("Processing parallel files...")
     # Process an arbitrary number of files line by line simultaneously. Python 3.3+
@@ -64,6 +64,10 @@ def parse_args():
         "-out", 
         help="The output filepath.",
         required=True)
+    parser.add_argument(
+        "-lang",
+        help="The 3-letter language code (default: eng).",
+        default="eng")
     parser.add_argument(
         "-lev",
         help="Align using standard Levenshtein (default: True).",
